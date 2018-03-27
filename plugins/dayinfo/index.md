@@ -2,7 +2,20 @@
 
 ## Présentation
 
-Ce plugin permet d'obtenir plusieurs types d'équipements qui apportent leurs informations :
+Ce plugin permet d'obtenir plusieurs types d'équipements qui apportent leurs commandes informations :
+
+* Jours fériés
+
+* Vacances scolaires
+
+* Lune
+
+* Informations diverses (saison et week-end)
+
+* Calendrier personnalisé
+
+
+## Commandes disponibles
 
 ### Jour fériés
 
