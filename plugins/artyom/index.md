@@ -28,6 +28,6 @@ Oui il utilise Google Speech Recognition et Google Speech Synthetiser sous jacen
 
 Il faut bien utiliser Chrome en navigateur
 
-## changelog
+## Changelog
 
 [Voir la page dédiée](changelog.md).
