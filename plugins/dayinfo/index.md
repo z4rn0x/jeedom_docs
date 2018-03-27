@@ -89,8 +89,4 @@ wget --output-document ./calendar.ics --auth-no-challenge --http-user=USER --htt
 
 ## Changelog
 
-### Version octobre 2017
-
-Refonte complète avec passage sur différents types d'équipements
-
-Passage en dépendance sur le plugin Localisation et Trajet (geotrav) pour la définition du lieu
+[Voir la page dédiée](changelog.md).
