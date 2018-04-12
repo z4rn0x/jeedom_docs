@@ -6,7 +6,7 @@ Ce plugin permet d'utiliser les Dash Button Amazon sans passer de commande mais 
 
 ## Configuration
 
-Le plugin ne comporte pas de configuration générale.
+Il est possible de sélectionner l'interface réseau de communication.
 
 Il faut créer ensuite un équipement par Dash et y saisir l'adresse MAC, en respectant le format suivant :
 00:00:00:00:00:00
