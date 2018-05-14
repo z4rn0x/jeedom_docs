@@ -4,7 +4,7 @@
 
 Ce plugin permet d'obtenir la météo depuis le site DarkSKy.net qui dispose de données "temps réel"
 
-Une présentation est disponible sur cet article : https://lunarok-domotique.com/plugins-jeedom/dark-sky-meteo-panel/[Article de présentation]
+Une présentation est disponible sur cet article : [Article de présentation](https://lunarok-domotique.com/plugins-jeedom/dark-sky-meteo-panel/)
 
 Le plugin dispose de différentes fréquence de rafraichissement :
 
