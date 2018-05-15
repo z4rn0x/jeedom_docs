@@ -118,7 +118,7 @@ Il faut utiliser le déclencheur en combinaison avec une condition A.
 
 On pourra utiliser time_op pour ajouter 30mn à l'heure du coucher par exemple, comme sur la capture suivante
 
-![Illustration](Heliotrope_sample2.png?raw=true "Illustration")
+![Illustration](Heliotrope_sample2.jpg?raw=true "Illustration")
 
 Il est possible également de déclencher alors un scénario différent pour garder d'autres moyens de contrôles comme la commande manuelle.
 
