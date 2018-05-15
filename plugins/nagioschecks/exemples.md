@@ -54,8 +54,6 @@ Un des checks à disposition est check_procs. Un usage basique est de lui donner
 
 Voici quelques exemples de configuration :
 
-image::../images/check_procs.png[Conf procs]
-
 Dans cet exemple, le service ne remontera qu'en warning, donc visible sur le widget mais sans remontée automatique d'alerte par Jeedom (mais bien sûr, c'est faisable avec un scénario).
 
 Comme pour tout check, pour plus de possibilités et d'arguments, n'hésitez pas à passer la commande ""/usr/lib/nagios/plugins/check_procs -h" pour avoir l'aide.
@@ -63,10 +61,6 @@ Comme pour tout check, pour plus de possibilités et d'arguments, n'hésitez pas
 ## Vérification du RAID d'un serveur distant
 
 Un exemple avec l'utilisation d'un check distant et un utilisant sudo:
-
-Voici l'exemple en image :
-
-image::../images/check_disks.png[Conf procs]
 
 Dans cet exemple, il y a deux checks différents :
 
