@@ -44,7 +44,7 @@ On peut également sélectionner la création automatique de commandes liées qu
 
 Dans la case "Check" on saisit le nom du check à lancer.
 
-Dans la case "Options" on saisit les options de ce check (voir les exemples).
+Dans la case "Options" on saisit les options de ce check (voir [les exemples](exemples.md).
 
 #### Résultat de commande dans un scénario
 
