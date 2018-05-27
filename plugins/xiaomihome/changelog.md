@@ -2,6 +2,10 @@
 
 Important : en cas de mise à jour disponible pour laquelle il n'y a pas d'information dans cette section, c'est qu'elle n'intègre aucune nouveauté majeure. Cela peut être un ajout de documentation, une correction de documentation, des traductions ou bien de la correction de bugs mineurs.
 
+## Version du 25 mai 2018
+
+Ajout de la nouvelle version du Cube Aqara (actuellement le firmware de la gateway ne renvoit pas les infos, uniquement la batterie)
+
 ## Version du 20 mai 2018
 
 Ajout des nouvelles Yeelight dimmable E27 (les nouvelles color 9W sont prises en charge sur le modèle color existant)
