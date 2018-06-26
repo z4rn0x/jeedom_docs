@@ -11,3 +11,8 @@ Il faut choisir un équipement de type geotrav, en seront déduis le nom de la v
 Ce plugin permet d'obtenir des informations :
 
 * température de l'eau
+* température de l'air
+* température ressentie
+* condition
+* indice UV
+* état de la mer
