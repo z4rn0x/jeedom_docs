@@ -32,7 +32,7 @@ Il y a 5 types d'équipements disponible, tous ne fonctionnent pas pareil dans J
   les infos de statut et batterie sont disponible
   deux actions verrouillage et déverouillage sont créées pour chaque gateway ajouter
 
-- gateway : la gateway est un équipement ajouté manuellement dans le plugin avec son IP et son ID (se référer pour ce dernier à l'étiquete The Keys)
+- gateway : la gateway est un équipement ajouté manuellement dans le plugin avec son IP et son ID du QRcode (se référer pour ce dernier au papier fourni avec et sous le QRcode il y a 3 chiffres + sond ID à saisir)
   une information de présence online est disponible, ainsi qu'une action refresh qui rescanne les serrures alentour
 
 - bouton : les boutons d'accès BLE doivent être ajoutés manuellement avec leur ID
