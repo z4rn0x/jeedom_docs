@@ -56,6 +56,6 @@ Cette section traite des équipements Wifi additionnels. Il n'est pas question d
 * **Xiaomi Mi Power Plug Wifi** : on, off, statut, utilisation, voltage, charge voltage, charge puissance, puissance consommée, rafraichir.
 * **Xiaomi Philips Eyecare Smart Lamp** : statut, on/off, luminosité (+slider), eyecare (statut, scènes + différents modes disponibles).
 * **Xiaomi Philips Ceiling** : statut, on/off, luminosité (+slider), couleur de blanc (info+cmd), Auto CCT (statut+cmd), scènes (statut + activation scènes).
-* **Xiaomi Philips E27** : statut, on/off, luminosité (+slider), couleur de blanc (info+cmd), Auto CCT (statut+cmd), scènes (statut + activation scènes).
+* **Xiaomi Philips E27 (marche aussi pour les E14, à valider sur les spots)** : statut, on/off, luminosité (+slider), couleur de blanc (info+cmd), Auto CCT (statut+cmd), scènes (statut + activation scènes).
 * **Xiaomi Mi Electric Rice Cooker** : non implémenté en l'état.
 * **Ventilateur** : statut, température, humidité, buzzer (statut + activation), led (statut + activation), démarrer/arrêter (avec les différents modes disponibles), info vitesse et vitesse naturelle, rotation (et les commandes pour la paramétrer, tourner).
