@@ -82,6 +82,12 @@ Oui il utilise les API Telegram (la version Bot)
 
 Non, Telegram garantit le chiffrement client à client.
 
+
+>Est-ce qu'on peut utiliser des emojis ?
+
+Oui en utilisant son code HTML. Par exemple vous trouverez des emojis avec leur code ici :
+https://www.quackit.com/character_sets/emoji/
+
 ## Troubleshooting
 
 >Je n'ai pas de retour de Telegram
