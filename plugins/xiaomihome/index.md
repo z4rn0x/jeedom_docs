@@ -7,7 +7,9 @@ Une présentation complète du plugin est disponible ici : [Article de présenta
 Le plugin implémente 3 protocoles Xiaomi, ce qui donne un éventail conséquent de matériels supportés :
 
 ### **Le protocole zigbee Xiaomi Aqara**
-La Xiaomi Aqara Home Gateway (aussi appelée **passerelle Xiaomi**) permet d'utiliser différents capteurs Zigbee de Xiaomi. [Voir la doc Aqara](aqara.md).
+La Xiaomi Mi Home Gateway (aussi appelée **passerelle Xiaomi**) permet d'utiliser différents capteurs Zigbee de Xiaomi. [Voir la doc Aqara](aqara.md).
+
+Attention, la gateway Aqara Homekit est différente et ne possède pas l'API permettant une connexion à la domotique. De plus cette nouvelle gateway ne permet d'utiliser que les nouveaux capteurs estampillés "Aqara" généralement (de formes carrés/rectangulaires)
 
 ### **Les lumières Yeelight**
 
