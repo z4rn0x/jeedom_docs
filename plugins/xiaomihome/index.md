@@ -53,6 +53,14 @@ Vérifiez si la clé a changé dans Mi Home, cela peut se produire après une mi
 
 Vérifiez que votre routeur laisse bien passer les paquets broadcast du réseau Wifi vers l'ethernet par exemple.
 
+>Mon Jeedom est installé sur Docker et ne voit pas la gateway ?
+
+La gateway communique en broadcast, il faut donc être sur le même réseau (mode host) et s'assurer que les paquets Broadcast sont recu sur Jeedom.
+
+>Jeedom ne voit pas la nouvelle gateway estampillée "Aqara Homekit" ?
+
+Elle ne propose pas l'API Aqara, elle ne fonctionne pas avec le plugin, il faut bien prendre le modèle présenté dans la doc. De plus la passerelle Homekit n'est pas compatible avec l'intégralité des modèles de capteurs Xiaomi.
+
 >Combien de capteurs au maximum peut-il y avoir sur une Gateway Aqara ?
 
 Les remontées utilisateurs indiquent **31 capteurs + la Gateway**. Au delà il faut supprimer l'appairage d'un capteur pour en remettre un. Le plugin supporte plusieurs Gateways.
