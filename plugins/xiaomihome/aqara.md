@@ -4,7 +4,9 @@
 
 Une présentation complète de la gamme est disponible ici : [Article de présentation](https://lunarok-domotique.com/plugins-jeedom/xiaomi-home-jeedom/aqara-lumi-xiaomi-smart-home-security/).
 
-La passerelle Xiaomi Aqara est nécessaire pour activer l'API locale, afin que Jeedom puisse communiquer avec ses différents équipements.
+La passerelle Xiaomi est nécessaire pour activer l'API locale, afin que Jeedom puisse communiquer avec ses différents équipements.
+
+Attention, il faut bien la version Xiaomi Mi Home Security. Pas la version Aqara Homekit qui ne dispose pas d'API et ne permet pas de lier tous les capteurs existants.
 
 Pour cela, il faut :
 * ajouter la passerelle dans l'application **Mi Home**,
