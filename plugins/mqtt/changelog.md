@@ -2,6 +2,10 @@
 
 En cas d'absence de note dans ce chapitre, les mises à jour ne concernent que la doc, les traductions et des corrections mineures
 
+## Novembre 2018
+
+Mise à jour du script de dépendances multi PHP
+
 ## Janvier 2017
 
 Mise en place du retain en option des commandes actions
