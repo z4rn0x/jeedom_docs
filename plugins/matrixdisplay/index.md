@@ -1,4 +1,4 @@
-# Matrix Led Messenger
+# Matrix Display
 
 ## Présentation
 
@@ -12,7 +12,11 @@ Il permet deux types d'interconnexions :
 
 Les mots clefs à utiliser dans le champ titre pour passer les options sont :
 
-- intensity, speed, static et time (en minutes)
+- intensity, speed, static et time pour le Smart Led Messenger
+
+- intensity, type, txt, flash et time pour le Notif'Heure
+
+Pour le Notif'Heure, en cas de présence du DHT22, les commandes infos température, humidité, température ressentie, point de rosée et indice de confort sont créées
 
 ## Configuration
 
@@ -22,7 +26,11 @@ Sur chaque équipement il faut configurer :
 
   - l'adresse IP
 
-  - les paramètres par défaut de vitesse, statique et luminosité
+  - le type (Smart Led Messenger ou Notif'Heure)
+
+  - les paramètres par défaut de vitesse, statique et luminosité pour le Smart Led Messenger
+
+  - les paramètres par défaut de luminosité, effet, flash, texte avant notif pour le Notif'Heure
 
   - si l'on déssire activer la gestion locale avec le message à afficher
 

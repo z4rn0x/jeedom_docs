@@ -4,4 +4,4 @@ Important : en cas de mise à jour disponible pour laquelle il n'y a pas d'infor
 
 ### 29/11/2018
 
-Correction du bug avec time
+Ajout du Notif'Heure
