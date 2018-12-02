@@ -42,6 +42,10 @@ Le champ "Message à afficher" prend les fonctions et les commandes informations
 
 Oui, mais le plugin utilise l'API locale du Smart Led Messenger et permet de le déconnecter du Cloud.
 
+> Ou puis-je trouver la documentation du Notif'Heure ?
+
+https://byfeel.info/documentation-notifheure/
+
 ## Changelog
 
 [Voir la page dédiée](changelog.md).
