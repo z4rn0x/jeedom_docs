@@ -2,19 +2,23 @@
 
 ## Présentation
 
-Ce plugin permet d'interconnecter Jeedom avec des afficheurs Smart Led Messenger ou Notif'Heure.
+Ce plugin permet d'interconnecter Jeedom avec des afficheurs Smart Led Messenger, Notif'Heure ou Awtrix.
 
-Il permet deux types d'interconnexions :
+Il permet deux types de commandes actions :
 
 - Envoyer un message, y compris avec des options
 
-- Définir le paramétrage permanent de l'afficheur en local en définissant un texte qui est rafraichi toutes les minutes.
+- Définir le paramétrage permanent de l'afficheur en local en définissant un texte qui est rafraichi toutes les minutes (Smart Messenger et Notif'Heure).
+
+- Paramétrer la couleur d'affichage (Awtrix)
 
 Les mots clefs à utiliser dans le champ titre pour passer les options sont :
 
 - intensity, speed, static et time pour le Smart Led Messenger
 
 - intensity, type, txt, flash et time pour le Notif'Heure
+
+- bri, color, mood, gamemode, game pour l'Awtrix
 
 Pour le Notif'Heure, en cas de présence du DHT22, les commandes infos température, humidité, température ressentie, point de rosée et indice de confort sont créées
 
@@ -26,7 +30,7 @@ Sur chaque équipement il faut configurer :
 
   - l'adresse IP
 
-  - le type (Smart Led Messenger ou Notif'Heure)
+  - le type (Smart Led Messenger, Notif'Heure ou Awtrix)
 
   - les paramètres par défaut de vitesse, statique et luminosité pour le Smart Led Messenger
 
