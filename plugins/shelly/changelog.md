@@ -1,11 +1,3 @@
 # Changelog
 
 Important : en cas de mise à jour disponible pour laquelle il n'y a pas d'information dans cette section, c'est qu'elle n'intègre aucune nouveauté majeure. Cela peut être un ajout de documentation, une correction de documentation, des traductions ou bien de la correction de bugs mineurs.
-
-### 15/12/2018
-
-Ajout du Awtrix
-
-### 29/11/2018
-
-Ajout du Notif'Heure
