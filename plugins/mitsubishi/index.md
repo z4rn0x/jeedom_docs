@@ -58,6 +58,9 @@ Pour une climatisation :
 
 Oui, le plugin utilise l'API MelCloud de Mitsubishi (qui permet de raccorder les PAC avec un module Wifi).
 
+> Esc-que les API sont documentées ?
+
+Non, mais on trouve du reverse comme le premier plugin de floman321 ou cet article : http://mgeek.fr/blog/un-peu-de-reverse-engineering-sur-melcloud
 
 ## Changelog
 
