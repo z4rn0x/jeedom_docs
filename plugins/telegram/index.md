@@ -106,6 +106,10 @@ C'est normal, il ne peut pas fonctionner car Telegram ne sait pas reconnaître l
 
 Merci de vérifier que vous avez bien paramétré un username dans votre profil telegram. Regarder le menu options ou settings via le menu sandwich (les 3 barres horizontales les unes sur les autres)
 
+>Après un Ask, le clavier avec réponses reste actif si il n'y a pas eu de réponse, comment faire ?
+
+Il suffit d'envoyer un message sur timeout avec l'option remove=1
+
 ## Changelog
 
 [Voir la page dédiée](changelog.md).
