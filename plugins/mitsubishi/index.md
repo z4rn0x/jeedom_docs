@@ -16,7 +16,7 @@ Une fois saisie, le plugin va récupérer les équipements présents sur l'API e
 
 Suivant si c'est une PAC ou une clim (non testée chez moi), il va créer les commandes infos et actions.
 
-Pour une PAC :
+Pour une PAC (4 équipements sont créés : la PAC, le module ECS, le module Zone 1 et le module Zone 2):
 
  - slider pour paramétrer la consigne (pour les 2 zones)
 
@@ -26,19 +26,27 @@ Pour une PAC :
 
  - le mode de chauffage (pour les 2 zones) en numérique (0,1,2) et texte (thermostat, température d'eau, loi d'eau)
 
- - la température extérieure
+ - la température consigne en mode 1 (pour les 2 zones)
 
- - la température de l'ECS
+ - si la zone est en idle (pour les 2 zones)
 
- - la consigne ECS
+ - la température extérieure (sur le modulee PAC)
 
- - si le mode Eco ECS est actif
+ - la température de l'ECS (sur le module ECS)
 
- - forcer le mode chauffe de l'eau
+ - la consigne ECS (sur le module ECS)
 
- - eteindre le mode forcé du chauffage de l'eau
+ - si le mode Eco ECS est actif (sur le module ECS)
 
- - allumer/eteindre/statut de la PAC
+ - forcer le mode chauffe de l'eau (sur le module ECS)
+
+ - eteindre le mode forcé du chauffage de l'eau (sur le module ECS)
+
+ - allumer/eteindre/statut de la PAC (sur le modulee PAC)
+
+ - statut online  (sur le modulee PAC)
+
+ - statut vacances (sur le modulee PAC)
 
 Pour une climatisation :
 
