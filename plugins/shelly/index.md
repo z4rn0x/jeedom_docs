@@ -22,7 +22,7 @@ Sur chaque équipement il faut configurer :
 
   - le type
 
-Les commandes sont créées automatiquement à la sauvegarde.
+Les commandes sont créées automatiquement à la sauvegarde. POur chaque type, les commandes infos et actions disponibles seront disponibles.
 
 ## FAQ
 
