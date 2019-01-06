@@ -9,3 +9,7 @@ Ajout du Awtrix
 ### 29/11/2018
 
 Ajout du Notif'Heure
+
+### Janvier 2019
+
+Ajout du bouton accès à l'interface des Matrix Display (par modal en http et new tab sur https)
