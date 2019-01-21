@@ -43,6 +43,15 @@ Merci _pierre_ pour cette technique :
 * Ouvrez le fichier **sqlite** avec un viewer sqlite, par exemple **[DB Browser](http://sqlitebrowser.org)**.
 * Cliquez sur **Ouvrir une base de données** puis **Parcourir les données** et enfin choisissez la table **ZDEVICE**.
 * Tout à droite, il doit y avoir une colonne **ZTOKEN** avec tous les tokens de vos périphériques Xiaomi.
+* La dernière version de l'application Mi Home sur iPhone stocke les tokens sous un format encrypté. Pour le decrypter, aller **[sur ce site](http://aes.online-domain-tools.com/)** et saisir les informations suivantes : 
+  * Input type : text
+  * Input text (hex): la clé de 96 caractères précédemment récupérée dans la colonne **ZTOKEN**
+  * Selectbox Plaintext / Hex: Hex
+  * Function: AES
+  * Mode: ECB
+  * Key (hex): 00000000000000000000000000000000
+  * Selectbox Plaintext / Hex: Hex
+  * Cliquer sur le bouton `Decrypt`. Votre token sont les deux premières lignes sur le bloc de droite. Ces deux lignes devrait contenir votre token de 32 caractères.
 
 ## Configuration des équipements Wifi
 
