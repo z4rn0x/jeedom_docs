@@ -8,19 +8,25 @@ Le plugin Jeedom permet une interconnexion bidirectionnelle pour obtenir le meil
 
 ## Configuration
 
-La configuration générale nécessite de rentrer les variables propre au Miniserver Loxone : IP, utilisateur et mot de passe. On y trouve également l'url HTTP utilisable dans Loxone pour communiquer avec Jeedom.
+La configuration générale nécessite de rentrer les variables propre au Miniserver Loxone : IP, utilisateur, mot de passe et port du Virtual Input UDP. On y trouve également l'url HTTP utilisable dans Loxone pour communiquer avec Jeedom.
 
 Les connexions avec Loxone sont :
 
-  - récupération de l'arbre des composants Loxone sur sauvegarde et daily. Les commandes et équipements correspondant sont créés
+  - récupération de l'arbre des composants Loxone sur sauvegarde de la configuration et de facon journalière. Les commandes et équipements correspondant sont créés (uniquement ce que l'utilisateur peut voir). Uniquement les commandes digitales et analogiques sont disponibles.
   
-  - les changements d'état sont récupérés par Jeedom en websocket
+  - les changements d'état sont récupérés par Jeedom en websocket (sous les mêmes conditions que plus haut, être accessibles à l'utilisateur et digital/analogique)
   
-  - Jeedom peut envoyer des valeurs de commandes existantes sur trigger à Loxone (via le modal)
+  - Jeedom peut envoyer des valeurs de commandes existantes sur trigger à Loxone (via le modal). Ceci utilise des commandes UDP vers Loxone en Virtual Input UDP.
   
-  - Jeedom peut envoyer des commandes spécifiques à Loxone (via l'équipement Loxone)
+  - Jeedom peut envoyer des commandes spécifiques à Loxone (via l'équipement Loxone). Ceci utilise des commandes UDP vers Loxone en Virtual Input UDP.
   
   - Loxone peut envoyer des commandes spécifiques à Jeedom via l'adresse indiquée sur la page de configuration (en Virtual Output HTTP). Il faut utiliser en contenu id="nom voulu" et value="valeur". Une info sera créée qui permet aussi de mettre des triggers Cmd actions et scénario.
+  
+Les commandes envoyées en UDP permettent côté Loxone de créer des commandes facilement à partir du moniteur (https://www.loxone.com/enen/kb/communication-with-udp/)
+
+Pour utiliser les commandes HTTP pour envoyé vers Jeedom depuis Loxone, voir les Virtual Output (https://www.loxone.com/enen/kb/virtual-inputs-outputs/)
+
+La référence de l'API Loxone est disponible dans leur documentation (https://www.loxone.com/enen/kb/api/)
 
 ## FAQ
 
