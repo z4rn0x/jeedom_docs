@@ -5,3 +5,4 @@ Important : en cas de mise à jour disponible pour laquelle il n'y a pas d'infor
 ## Version du 12 février 2019
 
 Ajout de la possibilité d'utiliser un credential configuré dans l'appli
+Ajout du RGBW2
