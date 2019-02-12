@@ -33,6 +33,8 @@ Pour un équipement de type localisation, deux champs d'option sont disponibles 
   - Par une info Jeedom : permet de se mettre à jour par rapport à la valeur provenant d'ailleurs dans Jeedom
 
   - URL de mise à jour par API : s'utilise dans Tasker/Automate etc pour mettre à jour une localisation automatiquement, toutes les localisations sont ainsi disponibles
+  
+  - Statique : pour définir une adresse entièrement manuelle
 
 [IMPORTANT]
 Il ne faut pas saisir adresse ET coordonnées, saisissez un seul des deux, celui que vous avez à disposition et sauvegardez l'équipement. Tout sera renseigné automatiquement.
@@ -99,6 +101,10 @@ SUBMIT
   -sélectionner la ROUTE/LINE désirée, le code sera indiqué
 
 Les options peuvent être testées dans 'parameters'
+
+### iCloud Device
+
+Il est possible d'enregistrer un équipement qui corresponde à un Device Apple
 
 ## FAQ
 
