@@ -9,9 +9,10 @@ Pour les équipements Wifi supplémentaires supportés, il faut faire un ajout m
 
 ## Récupérer le token d'un équipement manuellement
 
-Trois méthodes existent :
+Quatre méthodes existent :
 * la première avec l'outil **[Mi Toolkit](https://github.com/ultrara1n/MiToolkit)** qui va récupérer tous les tokens dans votre application Mi Home. Cela nécessite un Android avec le mode Debug USB activable.
-* Les deux autres sont basées sur une **récupération de la base de données de Mi Home**, une pour **Android**, l'autre pour **iPhone**.
+* Les deux suivantes sont basées sur une **récupération de la base de données de Mi Home**, une pour **Android**, l'autre pour **iPhone**.
+* Enfin la dernière permet de récupérer les tokens en utilisant une version modifiée de Mi Home (**uniquemen sur Android**).
 
 ### 1ère méthode : MiToolkit
 
@@ -52,6 +53,22 @@ Merci _pierre_ pour cette technique :
   * Key (hex): 00000000000000000000000000000000
   * Selectbox Plaintext / Hex: Hex
   * Cliquer sur le bouton `Decrypt`. Votre token sont les deux premières lignes sur le bloc de droite. Ces deux lignes devrait contenir votre token de 32 caractères.
+
+### 4ème méthode (Android)
+* Autoriser les sources inconnues:
+ L’installation d’applications hors Google Play Store nécessite de modifier les paramètres du téléphone, de façon à autoriser l’installation d’applications en provenance de sources dites « inconnues ».
+ Sur son téléphone : Paramètres → onglet Général → Sécurité puis cochez Sources inconnues.
+* Installer l’appli mi-home modifiée:
+ Nous allons installer une version modifiée de mi home qui affiche en clair son token directement dans l’appli. Simple et efficace.
+ Télécharger l’appli mihome modifiée sur son téléphone android: (07/12/18 5.4.37)
+
+ https://drive.google.com/drive/folders/18OyC78peggCdiMmmT7i5bpvpdMJl1Ec1?usp=sharing
+
+* L’installer, l’ouvrir se connecter avec son identifiant xiaomi afin de récupérer sa configuration habituelle.
+* Récupérer son token:
+ Sur la nouvelle appli mi home : Aller sur l'appliance, menu configuration / général settings / informations sur le réseau
+ Deux lignes nous intéressent : l’adresse IP locale du robot et le token
+ Notez précieusement et sans erreur ces informations. Quand c’est bon, vous pouvez désinstaller mi home modifié pour réinstaller la version officielle
 
 ## Configuration des équipements Wifi
 
