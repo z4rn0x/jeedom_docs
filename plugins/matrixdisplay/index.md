@@ -28,9 +28,9 @@ Le plugin ne comporte pas de configuration générale.
 
 Sur chaque équipement il faut configurer :
 
-  - l'adresse IP
+  - l'adresse IP (avec le port pour Awtrix 2)
 
-  - le type (Smart Led Messenger, Notif'Heure ou Awtrix)
+  - le type (Smart Led Messenger, Notif'Heure, Awtrix 1 et 2)
 
   - les paramètres par défaut de vitesse, statique et luminosité pour le Smart Led Messenger
 
