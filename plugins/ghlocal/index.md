@@ -2,13 +2,43 @@
 
 ## Présentation
 
+Ce plugin a pour but de gérer vos Google Home et par extension vos Chromecast.
 
+Le plugin permet d'envoyer des médias vers vos Google Home et Chromecast.
 
+Pour les Google Home, il permet aussi de récupérer les alarmes et timers, l'activation du mode silencieux, le scan bluetooth
 
 ## Configuration
 
+Le plugin ne dispose pas de configuration générale.
 
+Pour chaque équipement, il faut indiquer si c'est un Google Home ou Chromecast, ainsi que son IP.
 
+Les commandes sont créées automatiquement.
+
+## Commandes
+
+Les commandes suivantes sont communes aux Google Home et Chromecast (car elles utilisent la fonctionnalité Chromecast du Google Home) :
+
+Stop lecture
+Mute
+Unmute
+Définir volume lecture
+Lire une phrase
+Jouer un Fichier
+Envoyer un rapport
+Envoyer une URL
+Commande Scénario
+Radio
+
+Les Google Home ont des commandes spécifiques qui s'appuient sur leur API local non officielle :
+
+Alarmes
+Timers
+Volume Alarmes (avec Définir Volume Alarme)
+Etat Notification (avec Notification On, Notification Off)
+Rafraichir
+Redémarrer
 
 ## FAQ
 
