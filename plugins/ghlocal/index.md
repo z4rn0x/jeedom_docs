@@ -4,7 +4,7 @@
 
 Ce plugin a pour but de gérer vos Google Home et par extension vos Chromecast.
 
-Le plugin permet d'envoyer des médias vers vos Google Home et Chromecast.
+Le plugin permet d'envoyer des médias vers vos Google Home et Chromecast, qu'ils soient locaux, distant, ou des rapports jeedom ou biencore consulter un site pour les écrans.
 
 Pour les Google Home, il permet aussi de récupérer les alarmes et timers, l'activation du mode silencieux, le scan bluetooth
 
@@ -20,61 +20,67 @@ Les commandes sont créées automatiquement.
 
 Les commandes suivantes sont communes aux Google Home et Chromecast (car elles utilisent la fonctionnalité Chromecast du Google Home) :
 
-Stop lecture
+Stop lecture : arrête toute lecture en cours
 
-Pause lecture
+Pause lecture : met en pause la lecture en cours
 
-Reprise lecture
+Reprise lecture : reprend la lecture en cours
 
-Définir volume lecture
+Définir volume lecture : règle le volume des medias en %
 
-Lire une phrase
+Jouer un Fichier : permet de lancer un média supporté par le GH/Chromecast (audio sur tout, pour ce qui dispose d'un écran ca peut être une image ou vidéo).
 
-Jouer un Fichier
+Ouvrir une URL : permet d'afficher un site sur un GH/Chromecast avec écran (ou lire une vidéo youtube)
 
+Commande Scénario : est prévue pour être utilisée en scénario sur les commandes report et notification de caméra
 
-Ouvrir une URL
+Radio : permet de lire une des radios, c'est une commande de type select avec une liste prédéfinie
 
-Commande Scénario
-
-Radio
-
-Sons locaux
+Sons locaux : permet de lire un des sons présents dans le plugin (des sons de notification). Le plugin propose un modal permettant de gérer les fichiers.
 
 
 Les Google Home ont des commandes spécifiques qui s'appuient sur leur API local non officielle :
 
-Alarmes informations brutes
+Alarmes informations brutes : présente un json des informations sur les alarmes définies sur le GH
 
-Alarme existante
+Alarme existante : info binaire indiquant si au moins une alarme existe
 
-Alarme existante ce jour
+Alarme existante ce jour : info binaire indiquant si la prochaine alarme est ajourd'hui
 
-Heure de la prochaine Alarme
+Heure de la prochaine Alarme : heure au format Jeedom (pour l'utiliser avec un scénario et en condition "A ...." par exemple) de l'alarme
 
-Timers informations brutes
+Timers informations brutes : présente un json des informations sur les timers définies sur le GH
 
-Timer existant
+Timer existant : info binaire indiquant si au moins un timer existe
 
-Durée original du timer (en mn)
+Durée original du timer (en mn) : durée d'origine du compte à rebours
 
-Heure du prochain Timer
+Heure du prochain Timer : heure au format Jeedom (pour l'utiliser avec un scénario et en condition "A ...." par exemple) du timer
 
-Volume Alarmes (avec Définir Volume Alarme)
+Volume Alarmes (avec Définir Volume Alarme) : volume spécifique des alarmes
 
-Etat Notification (avec Notification On, Notification Off)
+Etat Notification (avec Notification On, Notification Off) : commandes gérant et indiquant le mode DND (Do Not Disturb)
 
-Rafraichir
+Rafraichir : standard Jeedom
 
-Redémarrer
+Redémarrer : pour redémarrer votre GH
 
-Et les périphériques Bluetooth scannés
+
+Et les périphériques Bluetooth scannés par au moins une GH se voient dotés d'une commande RSSI par Google Home à portée. On peut ainsi obtenir le RSSI relatif d'un objet bluetooth par rapport à plusieurs points correspondant aux GH.
 
 ## FAQ
 
 > Est-ce que le plugin s'appuie sur des API tiers ?
 
 Il s'appuie sur les API de votre Google Home. C'est donc sur le réseau local.
+
+> Quels formats sont supportés ?
+
+Pour les fichiers il s'agit de MP3, MP4, PNG. Plus les URL de site et Youtube.
+
+> Quelle est la fréquence des informations sur les GH ?
+
+Toutes les 5mn par défaut (voir le tableau des cron utilisés par le plugin sur la page de configuration générale plugin)
 
 ## Changelog
 
