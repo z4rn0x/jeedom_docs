@@ -8,6 +8,10 @@ La passerelle Xiaomi est nécessaire pour activer l'API locale, afin que Jeedom 
 
 Attention, il faut bien la version Xiaomi Mi Home Security. Pas la version Aqara Homekit qui ne dispose pas d'API et ne permet pas de lier tous les capteurs existants.
 
+**Il faut la gateway en version Chine, la version prise Européenne ne permet pas l'activation du mode développeur.**
+
+**Faites d'abord les manipulations d'activation du mode développeur avant les mises à jour de firmware que proposerait Mi Home. Ne les faites que si ca n'a pas marché à la base ou si c'est déjà activé.**
+
 Pour cela, il faut :
 * ajouter la passerelle dans l'application **Mi Home**,
 * être sur le serveur **China Mainland**,
