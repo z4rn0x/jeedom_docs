@@ -24,6 +24,10 @@ Sur chaque équipement il faut configurer :
 
 Les commandes sont créées automatiquement à la sauvegarde. POur chaque type, les commandes infos et actions disponibles seront disponibles.
 
+Pour les relais, sur sauvegarde de l'équipement Jeedom va allez configuré chaque "push url" du Shelly pour recevoir en temps réel les changements d'état.
+
+Dans le cas du Shelly 1, si le bouton est configuré en "Detached type", alors Jeedom en plus pendant la sauvegarde équipement va créer une commande représentant le bouton et qui sera liée au "push url" du bouton. Permettant ainsi son utilisation en plus du relais comme bouton poussoir dans Jeedom.
+
 ## FAQ
 
 > Est-ce que le plugin s'appuie sur des API tiers ?
