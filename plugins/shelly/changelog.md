@@ -2,6 +2,12 @@
 
 Important : en cas de mise à jour disponible pour laquelle il n'y a pas d'information dans cette section, c'est qu'elle n'intègre aucune nouveauté majeure. Cela peut être un ajout de documentation, une correction de documentation, des traductions ou bien de la correction de bugs mineurs.
 
+## Version 1er juillet 2019
+
+Ajout du Shelly 1PM
+
+Ajout des URL Webhook pour le temps réel
+
 ## Version du 11 mars 2019
 
 Ajout du retour statut en mode VR du Shelly 2
