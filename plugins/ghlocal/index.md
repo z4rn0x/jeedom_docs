@@ -4,7 +4,7 @@
 
 Ce plugin a pour but de gérer vos Google Home et par extension vos Chromecast.
 
-Le plugin permet d'envoyer des médias vers vos Google Home et Chromecast, qu'ils soient locaux, distant, ou des rapports jeedom ou biencore consulter un site pour les écrans.
+Le plugin permet d'envoyer des médias vers vos Google Home et Chromecast, qu'ils soient locaux, distant, ou des rapports jeedom ou bien encore consulter un site pour les écrans.
 
 Pour les Google Home, il permet aussi de récupérer les alarmes et timers, l'activation du mode silencieux, le scan bluetooth
 
@@ -12,9 +12,11 @@ Pour les Google Home, il permet aussi de récupérer les alarmes et timers, l'ac
 
 Le plugin ne dispose pas de configuration générale.
 
-Pour chaque équipement, il faut indiquer si c'est un Google Home ou Chromecast, ainsi que son IP.
+Pour chaque équipement créé manuellement, il faut indiquer si c'est un Google Home ou Chromecast, ainsi que son IP.
 
-Les commandes sont créées automatiquement.
+Les périphériques Bluetooth sont créés automatiquement.
+
+Les commandes sont créées automatiquement dans tous les cas.
 
 ## Commandes
 
@@ -66,7 +68,7 @@ Rafraichir : standard Jeedom
 Redémarrer : pour redémarrer votre GH
 
 
-Et les périphériques Bluetooth scannés par au moins une GH se voient dotés d'une commande RSSI par Google Home à portée. On peut ainsi obtenir le RSSI relatif d'un objet bluetooth par rapport à plusieurs points correspondant aux GH.
+Et les périphériques Bluetooth scannés par au moins une GH se voient dotés d'une commande RSSI par Google Home à portée. On peut ainsi obtenir le RSSI relatif d'un objet bluetooth par rapport à plusieurs points correspondant aux GH. Une commande générale "Visible" est positive (1) si au moins un des Google Home trouve le périphérique dans les 5mn passées, elle est nulle si aucun Google Home ne le détecte dans les 5 dernière minutes.
 
 ## FAQ
 
