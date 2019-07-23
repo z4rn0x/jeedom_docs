@@ -32,7 +32,16 @@ Il faut configurer l'adresse, l'utilisateur et le mot de passe de la caméra Hik
 
 > Est-ce que le plugin s'appuie sur des API tiers ?
 
-Non, le plugin est en connexion directe avec le Doorbird
+Non, le plugin écoute les trames émises par les caméras sur le réseau local (celles qui servent au Centre de Surveillance Hikvision)
+
+
+> Quelles caméras sont compatibles ?
+
+Les caméras Hikvision qui peuvent émettre des détections vers le centre de surveillance, c'est à peu près la seule définition sans liste exacte.
+
+Toutes les caméras Hikvision ne propose pas tous les types de détection (comme le franchissement de ligne)
+
+Des clones Hikvision implémentent aussi ce protocole (ceux qui ont pour but de s'intégrer complètement dans une solution de surveillance full Hikvision)
 
 ## Changelog
 
