@@ -2,11 +2,46 @@
 
 ## Présentation
 
+KLF200 est un boitier de chez Velux permettant d'y associer des périphériques IO Homecrontrol. Il possède une interface filaire et aussi une API locale Ethernet.
 
+C'est cette dernière qui est utilisée par Jeedom et permettre ainsi de piloter des appareils IO Homecrontrol en local.
 
 ## Configuration
 
-Le plugin nécessite de saisir l'adresse IP de la gateway KLF200 en configuration
+### Configuration du KLF200
+
+La connexion Ethernet ne servira que pour l'API, la configuration se fait via le Wifi de la gateway.
+
+Pendant les 20mn après branchement, le KLF200 fournit un réseau Wifi sur lequel on peut se connecter et qui permet de faire les ajouts de devices et autres
+
+Pour se connecter au Wifi, vous reconnaitres le nom par "KL200_***" et le mot de passe à utiliser est sur le boitier (on en aura besoin aussi pour Jeedom)
+
+Ensuite, rendez vous sur velux.info avec le compte admin et en mot de passe velux123. Vous pouvez alors ajouter les devices par le moyen supporté qui correspond à votre cas (le plus simple étant la recopie d'une télécommande tactil KLR 200)
+
+Faites attention de bien nommer vos devices sans espace, c'est impératif pour le plugin Jeedom
+
+### Configuration du plugin
+
+Le plugin nécessite deux paramètres à saisir sur la page de configuration du plugin :
+
+  * l'adresse IP de la gateway KLF200 (celle de la carte ethernet)
+  
+  * le mot de passe du KLF200 (celui utilisé pour le Wifi)
+  
+Ensuite un bouton scan est disponible, il créera chaque équipement trouvés sur le KLF200 + un équipement global "Window" si au moins une a été trouvé (pareil pour les stores)
+
+### Configuration des équipements
+
+Chaque équipement est créé automatiquement, il affiche son ID, nom et type sur KLF200. Pour les commandes, il y a :
+- Niveau ouverture
+- Ouverture binaire
+- Fermer
+- Ouvrir
+- Stop
+- Définir ouverture (slider en %)
+- Refresh
+
+Les équipements ont les types génériques de type volets roulants définis par défaut pour permettre des les remonter dans Google Smart Home par exemple
 
 ## FAQ
 
