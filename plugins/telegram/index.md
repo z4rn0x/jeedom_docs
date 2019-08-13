@@ -82,11 +82,20 @@ Oui il utilise les API Telegram (la version Bot)
 
 Non, Telegram garantit le chiffrement client à client.
 
-
 >Est-ce qu'on peut utiliser des emojis ?
 
 Oui en utilisant son code HTML. Par exemple vous trouverez des emojis avec leur code ici :
 https://www.quackit.com/character_sets/emoji/
+
+>Quels sont les tags HTML disponible pour formater les messages ?
+
+On trouve la liste ici :
+https://core.telegram.org/bots/api#html-style
+
+>Est-ce qu'on peut utiliser de la notation Markdown à la place du HTML ?
+
+Oui soit en configurant tout l'équipement, soit en envoyant l'option dans un message. Pour plus d'informations sur le formatage Markdown avec Telegram :
+https://core.telegram.org/bots/api#markdown-style
 
 ## Troubleshooting
 
