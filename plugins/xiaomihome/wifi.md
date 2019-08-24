@@ -12,7 +12,7 @@ Pour les équipements Wifi supplémentaires supportés, il faut faire un ajout m
 Quatre méthodes existent :
 * la première avec l'outil **[Mi Toolkit](https://github.com/ultrara1n/MiToolkit)** qui va récupérer tous les tokens dans votre application Mi Home. Cela nécessite un Android avec le mode Debug USB activable.
 * Les deux suivantes sont basées sur une **récupération de la base de données de Mi Home**, une pour **Android**, l'autre pour **iPhone**.
-* Enfin la dernière permet de récupérer les tokens en utilisant une version modifiée de Mi Home (**uniquemen sur Android**).
+* Enfin la dernière permet de récupérer les tokens en utilisant une version modifiée de Mi Home (**uniquement sur Android**).
 
 ### 1ère méthode : MiToolkit
 
