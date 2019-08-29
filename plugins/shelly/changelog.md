@@ -2,6 +2,10 @@
 
 Important : en cas de mise à jour disponible pour laquelle il n'y a pas d'information dans cette section, c'est qu'elle n'intègre aucune nouveauté majeure. Cela peut être un ajout de documentation, une correction de documentation, des traductions ou bien de la correction de bugs mineurs.
 
+## Version aout 2019
+
+Ajout de la possibilité de créer des équipements "virtuel" pour les Shelly 2, 2.5 et 4 (pour profiter pleinement de Google par exemple sans passer par un plugin supplémentaire)
+
 ## Version 1er juillet 2019
 
 Ajout du Shelly 1PM
