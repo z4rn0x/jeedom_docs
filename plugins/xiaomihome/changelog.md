@@ -4,7 +4,7 @@ Important : en cas de mise à jour disponible pour laquelle il n'y a pas d'infor
 
 ## Version aout 2019
 
-Ajout du nouveau ventilateur Xiaomi
+Ajout du nouveau ventilateur Xiaomi et nouveau plafonnier Yeelight
 
 Correction de la prise en charge des lampes d'ambiance sur ceiling4 et 10
 
