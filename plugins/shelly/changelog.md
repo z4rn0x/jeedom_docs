@@ -2,6 +2,14 @@
 
 Important : en cas de mise à jour disponible pour laquelle il n'y a pas d'information dans cette section, c'est qu'elle n'intègre aucune nouveauté majeure. Cela peut être un ajout de documentation, une correction de documentation, des traductions ou bien de la correction de bugs mineurs.
 
+## Version septembre 2019
+
+Ajout des modèles EM, Flood
+
+Ajout d'une commande info "online" pour savoir si un Shelly est accessible sur le réseau
+
+Ajout d'un mode "virtuels" pour les Shelly 2, 2.5 et 4 pour créer de multiples devices avec un simple relais (afin de faciliter l'intégration dans les assistants vocaux ou app mobile)
+
 ## Version aout 2019
 
 Ajout de la possibilité de créer des équipements "virtuel" pour les Shelly 2, 2.5 et 4 (pour profiter pleinement de Google par exemple sans passer par un plugin supplémentaire)
