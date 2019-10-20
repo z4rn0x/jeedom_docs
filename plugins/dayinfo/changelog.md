@@ -2,6 +2,10 @@
 
 Important : en cas de mise à jour disponible pour laquelle il n'y a pas d'information dans cette section, c'est qu'elle n'intègre aucune nouveauté majeure. Cela peut être un ajout de documentation, une correction de documentation, des traductions ou bien de la correction de bugs mineurs.
 
+## Octobre 2019
+
+Ajout du numéro du jour de l'année
+
 ## 15 Mai 2018
 
 Ajout du calendrier 2018-2019 France
