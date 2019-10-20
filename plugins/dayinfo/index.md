@@ -31,6 +31,8 @@ Ce plugin permet d'obtenir plusieurs types d'équipements qui apportent leurs co
 
 * week-end en cours (1 ou 0)
 
+* jour de l'année (0 à 365)
+
 ### Vacances scolaires
 
 * vacances en cours (1 ou 0)
