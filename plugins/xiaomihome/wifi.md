@@ -9,10 +9,11 @@ Pour les équipements Wifi supplémentaires supportés, il faut faire un ajout m
 
 ## Récupérer le token d'un équipement manuellement
 
-Quatre méthodes existent :
+Cinq méthodes existent :
 * la première avec l'outil **[Mi Toolkit](https://github.com/ultrara1n/MiToolkit)** qui va récupérer tous les tokens dans votre application Mi Home. Cela nécessite un Android avec le mode Debug USB activable.
 * Les deux suivantes sont basées sur une **récupération de la base de données de Mi Home**, une pour **Android**, l'autre pour **iPhone**.
-* Enfin la dernière permet de récupérer les tokens en utilisant une version modifiée de Mi Home (**uniquement sur Android**).
+* La quatrième permet de récupérer les tokens en utilisant une version modifiée de Mi Home (**uniquement sur Android**).
+* La dernière avec Packet Sender à l'initialisation de l'appliance
 
 ### 1ère méthode : MiToolkit
 
@@ -69,6 +70,19 @@ Merci _pierre_ pour cette technique :
  Sur la nouvelle appli mi home : Aller sur l'appliance, menu configuration / général settings / informations sur le réseau
  Deux lignes nous intéressent : l’adresse IP locale du robot et le token
  Notez précieusement et sans erreur ces informations. Quand c’est bon, vous pouvez désinstaller mi home modifié pour réinstaller la version officielle
+ 
+### 5ème méthode (Packet Sender Tool)
+During setup of Mi Home devices the device tokens an be retrieved by sending a ping command to the device. This method uses a tool called Packet Sender which you will need to download. Choose the portable version which does not require installation.
+• Download the portable version of Packet Sender.
+• Reset the device following the instructions from the device manual, this usually means holding one or two buttons for 10 seconds. This will reset all device settings including the Wi-Fi settings.
+• After reset the device will create a it's own Wi-Fi network. This network will have a name related to the device and is used for configuring the device but will also allow us to retrieve the token. Connect to this Wi-Fi network with your computer which has Packet Sender running.
+• Open Packet Sender and enter the following details.
+o HEX: 21310020ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+o IP: 192.168.8.1
+o Port: 54321
+o Protocol dropdown: UDP
+• Click send and the device will respond with an answer which contains the unique device token. In the last 16 bytes (32 characters) of the devices response is the device token. Copy and save it somewhere.
+• Disconnect your computer from the devices network, you can now use the Mi Home app to setup the device and connect it to your Wi-Fi network.
 
 ## Configuration des équipements Wifi
 
