@@ -6,6 +6,8 @@ Important : en cas de mise à jour disponible pour laquelle il n'y a pas d'infor
 
 Ajout nouveau modèle plafonnier (le 260)
 
+Correction d'un bug ancien qui fait que des matériels pourraient apparaitre en "Ampoule Philips" il faut les recréer
+
 ## Version aout 2019
 
 Ajout du nouveau ventilateur Xiaomi et nouveau plafonnier Yeelight
