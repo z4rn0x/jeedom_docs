@@ -10,7 +10,9 @@ Pour les Google Home, il permet aussi de récupérer les alarmes et timers, l'ac
 
 ## Configuration
 
-Le plugin ne dispose pas de configuration générale.
+Le plugin dispose d'une page de configuration pour entrer un token d'authentification.
+
+Pour trouver ce token : https://gist.github.com/rithvikvibhu/1a0f4937af957ef6a78453e3be482c1f
 
 Pour chaque équipement créé manuellement, il faut indiquer si c'est un Google Home ou Chromecast, ainsi que son IP.
 
