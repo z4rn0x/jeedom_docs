@@ -38,6 +38,7 @@ L'équipement dispose de plusieurs commandes :
 * Statut accès Internet
 * Interdire l'accès Internet
 * Autoriser l'accès Internet
+* Wake On Lan
 
 ## FAQ
 
