@@ -18,13 +18,15 @@ Le plugin permet :
 
 ## Configuration
 
-Des paramètres sont utilisés par le plugin et sont ajustable à plusieurs niveaux (valeur par défaut, page de conf du plugin, page de l'équipement). La valeur utilisée est connue ainsi :
+Des paramètres sont utilisés par le plugin et sont ajustable à plusieurs niveaux (valeur par défaut, page de conf du plugin, page de l'équipement, modal de l'ambiance). La valeur utilisée est connue ainsi :
 
-- si définie sur l'équipement, c'est cette valeur qui est précise
+- valeur présente sur le modal de l'ambiance en premier
+
+- sinon, si définie sur l'équipement, c'est cette valeur qui est précise
 
 - sinon, si définie sur la page de configuration du plugin
 
-- par défaut si rien d'autre n'est définie, c'est la valeur par défaut (visible sur la page de configuration)
+- par défaut si rien d'autre n'est défini, c'est la valeur par défaut (visible sur la page de configuration)
 
 Ainsi, si on défini une durée d'allumage de 2mn sur la page de configuration, et 20mn pour le salon, c'est bien 20 qui sera utilisé pour la lumière du salon.
 
