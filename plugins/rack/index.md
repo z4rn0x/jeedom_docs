@@ -1,0 +1,35 @@
+# Rack Informatique
+
+## Présentation
+
+La plugin permet de faciliter la gestion de certains équipements présents dans un rack informatique. Le but est de centraliser sur un seul plugin différents matériels pour ne pas démultiplier les plugins gérant un seul équipement.
+
+Les équipements pris en charge :
+
+- Smart PDU Intellinet
+
+- Onduleurs (via NUT)
+
+Pour les onduleurs, le plugin n'utilise pas de dépendances python mais directement la commande NUT qui doit être présente.
+
+## Configuration
+
+Il n'y a pas de configuration générale.
+
+Pour chaque équipement, il faut préciser :
+
+- le type (Onduleur ou Intellinet)
+
+- l'adresse IP
+
+- si c'est un onduleur, le nom de l'onduleur tel que déclaré dans NUT
+
+## FAQ
+
+> Est-ce que le plugin s'appuie sur des API tiers ?
+
+Oui, l'API Intellinet. C'est une connexion sur le réseau local.
+
+## Changelog
+
+[Voir la page dédiée](changelog.md).
