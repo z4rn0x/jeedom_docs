@@ -4,7 +4,7 @@ Important : en cas de mise à jour disponible pour laquelle il n'y a pas d'infor
 
 ## Version décembre 2019
 
-Ajout du moteur store (Aqara)
+Ajout du moteur store (Aqara) et ampoule filament
 
 ## Version novembre 2019
 
