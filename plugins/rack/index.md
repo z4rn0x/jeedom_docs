@@ -10,6 +10,8 @@ Les équipements pris en charge :
 
 - Onduleurs (via NUT)
 
+- Switch Netgear JGS524PE
+
 Pour les onduleurs, le plugin n'utilise pas de dépendances python mais directement la commande NUT qui doit être présente.
 
 ## Configuration
@@ -18,17 +20,19 @@ Il n'y a pas de configuration générale.
 
 Pour chaque équipement, il faut préciser :
 
-- le type (Onduleur ou Intellinet)
+- le type (Onduleur NUT, Smart PDU Intellinet, Switch Netgear JGS524PE)
 
 - l'adresse IP
 
 - si c'est un onduleur, le nom de l'onduleur tel que déclaré dans NUT
 
+- si c'est un switch Netgear, le mot de passe de l'interface
+
 ## FAQ
 
 > Est-ce que le plugin s'appuie sur des API tiers ?
 
-Oui, l'API Intellinet. C'est une connexion sur le réseau local.
+Oui, celles des équipements. C'est une connexion sur le réseau local.
 
 ## Changelog
 
