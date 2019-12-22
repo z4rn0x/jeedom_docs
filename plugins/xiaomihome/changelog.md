@@ -4,6 +4,8 @@ Important : en cas de mise à jour disponible pour laquelle il n'y a pas d'infor
 
 ## Version décembre 2019
 
+Possibilité d'inverser le sens des moteurs rideaux et stores
+
 Ajout du moteur store (Aqara) et ampoule filament
 
 ## Version novembre 2019
