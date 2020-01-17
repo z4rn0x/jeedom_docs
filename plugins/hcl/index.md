@@ -47,7 +47,7 @@ Les paramètres disponibles :
 > Est-ce que le plugin s'appuie sur des API tiers ?
 
 Non.
-> tu es un kevin la suite ici (kevin.md).
+[Voir la page dédiée] (kevin.md).
 
 ## Changelog
 
