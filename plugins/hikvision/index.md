@@ -20,7 +20,7 @@ Attention, toutes les commandes ne sont pas disponibles sur toutes les caméras
 
 Le protocole existe dans certaines caméras "clone" Hikvision sans garantie
 
-POur être sur de bien recevoir les notifications, pensez à vérifier vos configurations Hikvision et que les différentes détection sont bien actives pour votre modèle
+Pour être sûr de bien recevoir les notifications, pensez à vérifier vos configurations Hikvision et que les différentes détections sont bien actives pour votre modèle.
 
 ## Configuration
 
