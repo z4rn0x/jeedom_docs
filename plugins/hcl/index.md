@@ -48,7 +48,7 @@ Les paramètres disponibles :
 
 Non.
 
-[Voir la page dédiée](kevin.md).
+[Tu es un kevin, la suite ici](kevin.md).
 
 ## Changelog
 
