@@ -23,7 +23,7 @@ Le plugin ne comporte pas de configuration générale.
 
 Il faut ajouter un équipement et configurer les 2 paramètres :
 
-  - quel équipement de localisation (geoloc ou geotrav) servira pour les coordonnées de la météo à récupérer
+  - quel équipement de localisation (configuration de jeedom ou geotrav) servira pour les coordonnées de la météo à récupérer
 
   - la clef API de Dark Sky (https://darksky.net/dev/)
 
