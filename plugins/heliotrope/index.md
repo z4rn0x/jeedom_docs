@@ -14,7 +14,7 @@ Le plugin permet en configuration générale de paramétrer la fréquence du cro
 
 Il faut ajouter un équipement et sélectionner l'équipement Localisation et Trajets (geotrav) qui servira pour le calcul.
 
-Ce plugin utilise une information venant du plugin Localisation et Trajets (geotrav) afin de réutiliser une localisation déjà existante.
+Ce plugin utilise une information venant de la conf Jeedom ou du plugin Localisation et Trajets (geotrav) afin de réutiliser une localisation déjà existante.
 
 Un autre paramètre est disponible pour paramétrer l'angle qu'on souhaite utiliser pour le calcul du coucher et lever du soleil uniquement (par défaut 90.58, ce qui est utilisé en général)
 
