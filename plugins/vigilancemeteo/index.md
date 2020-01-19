@@ -12,8 +12,6 @@ Ce plugin permet de créer des équipements météo de plusieurs types :
 
  * [Prévision Pluie 1H](pluie1h.md) : permet de récupérer les informations sur les prévisions pluies à l'heure qui suit par Météo France
 
- * [Séisme](seisme.md) : permet de récupérer la probabilité de séisme de magnitude 5 ou plus dans les 3 prochains jours
-
  * [Surf](surf.md) : permet de récupérer la hauteur des vagues, fréquence et direction
 
  * [Pollen](pollen.md) : permet de récupérer un niveau général de pollen ou un niveau pour 19 types différents de pollens, par département
