@@ -19,8 +19,7 @@ Il faut ajouter un équipement et saisir les informations de geolocalisation et 
 
 Les paramètres disponibles sont :
 
- * Latitude
- * Longitude
+ * Localisation à utiliser
  * Angle Fajr
  * Angle Isha
  * Méthode de calul d'angle
