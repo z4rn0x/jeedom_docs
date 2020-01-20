@@ -25,15 +25,15 @@ Le plugin permet :
 Le plugin s'appuie sur un scan des équipements Jeedom et des objets.
 Pour chaque objet il va créé un équipement "Gestion Lumière". Chaque équipement de la catégorie "Lumière" y sera lié et visible sur la page de l'équipement "Light Management"
 
-Pour pouvoir utiliser les différentes commandes du plugin, le scan utilise également les types génériques. Ainsi, une lampe pour pouvoir y faire un on/off devra proposer à minimum LIGHT_ON/LIGHT_OFF/LIGHT_STATUS. Une seule lampe par équipement est possible.
+Pour pouvoir utiliser les différentes commandes du plugin, le scan utilise également les types génériques. Ainsi, une lampe pour pouvoir y faire un on/off devra proposer à minimum Lumière Bouton On/Lumière Bouton Off/Lumière Etat. Une seule lampe par équipement est possible.
 
 Voici les types nécessaires sur l'équipement pour permettre les actions :
 
 |Fonction|Types à avoir sur l'équipement|
-|On/Off|LIGHT_ON,LIGHT_OFF,LIGHT_STATUS|
-|Luminosité|LIGHT_SLIDER,LIGHT_STATUS (et LIGHT_STATUS_BOOL pour la version binaire du coup)|
-|Température|LIGHT_SET_COLOR_TEMP,LIGHT_COLOR_TEMP|
-|Couleur|LIGHT_SET_COLOR,LIGHT_COLOR|
+|On/Off|Lumière Bouton On,Lumière Bouton Off,Lumière Etat|
+|Luminosité|Lumière Slider,Lumière Etat (et Lumière Etat(Binaire) pour la version binaire du coup)|
+|Température|Lumière Température Couleur(action),Lumière Température Couleur(info)|
+|Couleur|Lumière Couleur(action),Lumière Couleur(info)|
 
 ### Correction des équipements
 
