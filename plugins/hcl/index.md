@@ -2,7 +2,7 @@
 
 ## Présentation
 
-Permet de gérer vos lumières à travers Jeedom pour le quotidien. Le plugin créer un équipement par objet de Jeedom. Il scan tous les équipements avec les types génériques lumière disponible dans l'objet.
+Permet de gérer vos lumières à travers Jeedom pour le quotidien. Le plugin créer un équipement par objet de Jeedom. Il scan tous les équipements avec les types génériques lumière disponible dans la catégorie Lumière de l'objet.
 
 Le plugin permet :
 
