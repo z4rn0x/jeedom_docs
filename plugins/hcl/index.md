@@ -127,6 +127,7 @@ Un indicateur permet de connaitre le nombre de lampes allumées.
 
 Non.
 
+[Tu es un kevin, la suite ici](kevin.md).
 
 ## Changelog
 
