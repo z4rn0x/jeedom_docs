@@ -2,11 +2,17 @@
 
 Important : en cas de mise à jour disponible pour laquelle il n'y a pas d'information dans cette section, c'est qu'elle n'intègre aucune nouveauté majeure. Cela peut être un ajout de documentation, une correction de documentation, des traductions ou bien de la correction de bugs mineurs.
 
+## Version janvier 2020
+
+Ajout d'une nouvelle lampe Yeelight
+
+Ajout de la méthode de récupération des tokens dans les logs pour les appliances Wifi
+
 ## Version décembre 2019
 
 Possibilité d'inverser le sens des moteurs rideaux et stores
 
-Ajout du moteur store (Aqara) et ampoule filament
+Ajout du moteur store (Aqara) et ampoule filament (Yeelight)
 
 ## Version novembre 2019
 
