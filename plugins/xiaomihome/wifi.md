@@ -9,11 +9,12 @@ Pour les équipements Wifi supplémentaires supportés, il faut faire un ajout m
 
 ## Récupérer le token d'un équipement manuellement
 
-Cinq méthodes existent :
+Six méthodes existent (la dernière est la plus facile) :
 * la première avec l'outil **[Mi Toolkit](https://github.com/ultrara1n/MiToolkit)** qui va récupérer tous les tokens dans votre application Mi Home. Cela nécessite un Android avec le mode Debug USB activable.
 * Les deux suivantes sont basées sur une **récupération de la base de données de Mi Home**, une pour **Android**, l'autre pour **iPhone**.
 * La quatrième permet de récupérer les tokens en utilisant une version modifiée de Mi Home (**uniquement sur Android**).
-* La dernière avec Packet Sender à l'initialisation de l'appliance
+* La cinquième avec Packet Sender à l'initialisation de l'appliance
+* La sixième utilise une version 5.4.49 de Mi Home qui donne les tokens dans un fichier de log
 
 ### 1ère méthode : MiToolkit
 
@@ -83,6 +84,12 @@ o Port: 54321
 o Protocol dropdown: UDP
 • Click send and the device will respond with an answer which contains the unique device token. In the last 16 bytes (32 characters) of the devices response is the device token. Copy and save it somewhere.
 • Disconnect your computer from the devices network, you can now use the Mi Home app to setup the device and connect it to your Wi-Fi network.
+
+
+### Extraction depuis les logs Mi Home (Android)
+
+Une méthode simple sur Android consiste à installer la version 5.4.49 de Mi Home. Le fichier d'installation est facile à trouver par exemple sur apkmirror. Cette version a pour particularité de créer un fichier de log contenant toutes les infos des devices.
+Une fois installée, il suffit de l'ouvrir et se connecter. A ce moment là vous aurez déjà un fichier de log avec toutes les infos. Il se situe à cet emplacement : SmartHome/logs/plug_DeviceManager
 
 ## Configuration des équipements Wifi
 
