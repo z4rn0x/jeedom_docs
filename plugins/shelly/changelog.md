@@ -2,6 +2,14 @@
 
 Important : en cas de mise à jour disponible pour laquelle il n'y a pas d'information dans cette section, c'est qu'elle n'intègre aucune nouveauté majeure. Cela peut être un ajout de documentation, une correction de documentation, des traductions ou bien de la correction de bugs mineurs.
 
+## Version janvier 2020
+
+Correction sur Dimmer et RGBW
+
+Ajout des modules addons températures
+
+Ajout des trigger long_push et short_push
+
 ## Version décembre 2019
 
 Ajout du modèle Dimmer
