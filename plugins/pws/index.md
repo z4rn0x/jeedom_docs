@@ -6,6 +6,18 @@ Ce plugin permet d'utiliser des stations météos avec Jeedom en mode local. Les
 
 On trouve plusieurs modèles sur Amazon à partir de 100€.
 
+### Exemple de stations fonctionnelles
+
+Les stations météo qui utilisent WS View se trouvent sous plusieurs noms de marque, plusieurs variante mais reste le même modèle. Voici une liste qui devrait fonctionner.
+
+[Waldbeck Halley Station météo Multifonction](https://amzn.to/3924BKr)
+
+[Waldbeck Halley Station météo Multifonction avec écran](https://amzn.to/392592X)
+
+[Ventus W830](https://amzn.to/2wacIWU)
+
+Les Froggit semblent aussi être une variante.
+
 ## Configuration
 
 ### Configuration générale
