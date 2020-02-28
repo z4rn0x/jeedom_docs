@@ -96,6 +96,7 @@ Une fois installée, il suffit de l'ouvrir et se connecter. A ce moment là vous
 Cette section traite des équipements Wifi additionnels. Il n'est pas question de Yeelight ou de la gateway Aqara.
 
 * **Xiaomi Mi Robot Vacuum** : online, statut, batterie, aspiration (force + slider, attention au delà de 77 vous dépassez le mode turbo), surface nettoyée, durée nettoyage, état des erreurs, puissance aspiration, démarrer, arrêter, pause, retour socle, fonction spot, "où es-tu ?", rafraichir.
+* **Viomi Vacuum STYJ02YM** : online, statut, batterie, aspiration, mode serpillère, surface nettoyée, durée nettoyage, état des erreurs, puissance aspiration, démarrer, arrêter, pause, retour socle, Map ID, définir Map, mode pièces, rafraichir.
 * **Xiaomi Smart Mi Air Purifier (y compris Pro ou V2 avec écran)** : statut, qualité d'air, humidité, température, filtre, vitesse, buzzer (on/off), led (action dessus aussi), démarrer/arrêter (avec les différents modes disponibles).
 * **Xiaomi Smart Ultrasonic Humidifier** : statut, mode, humidité, humidité cible (+slider de set), température, buzzer (statut + activation), led (statut + activation), démarrer/arrêter (avec les différents modes disponibles).
 * **Xiaomi Smart Air Quality Monitor PM2.5 Detector** : qualité d'air, batterie, rafraichir.
@@ -106,3 +107,32 @@ Cette section traite des équipements Wifi additionnels. Il n'est pas question d
 * **Xiaomi Philips E27 (marche aussi pour les E14, à valider sur les spots)** : statut, on/off, luminosité (+slider), couleur de blanc (info+cmd), Auto CCT (statut+cmd), scènes (statut + activation scènes).
 * **Xiaomi Mi Electric Rice Cooker** : non implémenté en l'état.
 * **Ventilateur** : statut, température, humidité, buzzer (statut + activation), led (statut + activation), démarrer/arrêter (avec les différents modes disponibles), info vitesse et vitesse naturelle, rotation (et les commandes pour la paramétrer, tourner).
+
+Pour le Viomi, le mode pièces permet de lui demander le passage sur une liste de pièces.
+
+D'abord vous devez vous assurez d'être sur la bonne Map (une commande info vous donne la map actuelle, une commande action permet de la changer en fournissant l'ID dans le message)
+
+Ensuite, pour lancer la commande pièces, il faut dans le message mettre par exemple : 0,1,1,17.
+
+Ce qui signifie : 
+
+* Premier chiffre : nettoyage complet (0) ou les bords (1)
+
+* Deuxième chiffre : démarrer (1) ou pause (2)
+
+* Troisième chiffre : le nombre de pièce à effectuer
+
+* Quatrième chiffre et suivant : les ID des pièces
+
+Deuxième exemple pour 4 pièces : 0,1,4,11,12,13,14
+
+Pour trouver les ID, il faut tester et essayer
+
+Autre information pour les niveaux reportés par le Viomi :
+
+    Niveau d’eau (water_grade) => 11 = Bas / 12 = Moyen / 13 : Elevé
+    
+    Aspiration (fan_speed) => 0 = Silencieux / 1 = Standard / 2 = Moyen / 3 = Turbo
+    
+    Mode (is_mop) => 0 = aspi / 2 = aspi et lavage / 3 = lavage
+
