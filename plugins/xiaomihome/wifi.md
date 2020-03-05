@@ -122,7 +122,7 @@ Ce qui signifie :
 
 * Troisième chiffre : le nombre de pièce à effectuer
 
-* Quatrième chiffre et suivant : les ID des pièces
+* Quatrième chiffre et suivant : les ID des pièces (qui commencent à 10, pas à 0)
 
 Deuxième exemple pour 4 pièces : 0,1,4,11,12,13,14
 
