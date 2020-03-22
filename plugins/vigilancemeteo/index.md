@@ -19,6 +19,8 @@ Ce plugin permet de créer des équipements météo de plusieurs types :
  * [Plages](plage.md) : pour obtenir des informations relatives à la météo des plages
 
  * [Pollution de l'Air](air.md) : pour obtenir des informations relatives à la pollution
+ 
+ * [Alertes Globales](gdacs.md) : pour obtenir des informations relatives à des catastophes naturelles à l'échelle mondiale
 
 ## FAQ
 
