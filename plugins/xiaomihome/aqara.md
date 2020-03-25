@@ -38,7 +38,7 @@ La **passerelle Xiaomi** va remonter de manière automatique dans Jeedom, les é
 
 Il est possible de gérer depuis Jeedom les ajouts ou suppression de capteurs de vos gateways.
 
-**Inclusion** : pour chaque gateway, un bouton inclusion est disponible sur la page équipement du plugin. En cliquant dessus, la gateway se met en mode inclusion et attend qu'un capteur se présente. Il faudra suivre les manipulations nécessaires pour le capteur à inclure. Le module sera alors ajouter (et visible dans Jeedom mais aussi Mi Home)
+**Inclusion** : pour chaque gateway, un bouton inclusion est disponible sur la page équipement du plugin. En cliquant dessus, la gateway se met en mode inclusion et attend qu'un capteur se présente. Il faudra suivre les manipulations nécessaires pour le capteur à inclure. Le module sera alors ajouté (et visible dans Jeedom mais aussi Mi Home)
 
 **Exclusion** : pour exclure un capteur, ca se passe sur la page santé du plugin. Un bouton est disponible pour chaque capteur. A noter que l'exclusion ne supprime pas l'équipement dans Jeedom pour des raisons de sécurité. Il faudra le supprimer ensuite.
 
