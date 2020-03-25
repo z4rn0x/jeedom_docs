@@ -2,13 +2,13 @@
 
 ## Présentation
 
-Permet de gérer vos lumières à travers Jeedom pour le quotidien. Le plugin créer un équipement par objet de Jeedom. Il scan tous les équipements avec les types génériques lumière disponible dans la catégorie Lumière de l'objet.
+Permet de gérer vos lumières à travers Jeedom pour le quotidien. Le plugin crée un équipement par objet de Jeedom. Il scanne tous les équipements avec le type générique lumière disponibles dans la catégorie Lumière de l'objet.
 
-Le plugin permet :
+Le plugin permet de :
 
-- gérer des "ambiances" ou type d'éclairage (lecture, repas, soirée ...) qui correspondent à un éclairage donné (par exemple en lecture, seule la lampe de chevet de la pièce sera allumé à 70% en blanc froid)
+- gérer des "ambiances" ou types d'éclairage (lecture, repas, soirée ...) qui correspondent à un éclairage donné (par exemple en lecture, seule la lampe de chevet de la pièce sera allumée à 70% en blanc froid)
 
-- de lier un/des déclencheurs (comme les détecteurs de mouvement) pour activer en automatique un mode
+- lier un/des déclencheur(s) (comme les détecteurs de mouvement) pour activer en automatique un mode
 
 - gérer un timer pour éteindre automatiquement les lumières
 
@@ -23,7 +23,7 @@ Le plugin permet :
 ### Scan
 
 Le plugin s'appuie sur un scan des équipements Jeedom et des objets.
-Pour chaque objet il va créé un équipement "Gestion Lumière". Chaque équipement de la catégorie "Lumière" y sera lié et visible sur la page de l'équipement "Light Management"
+Pour chaque objet, il va créér un équipement "Gestion Lumière". Chaque équipement de la catégorie "Lumière" y sera lié et visible sur la page de l'équipement "Light Management"
 
 Pour pouvoir utiliser les différentes commandes du plugin, le scan utilise également les types génériques. Ainsi, une lampe pour pouvoir y faire un on/off devra proposer à minimum Lumière Bouton On/Lumière Bouton Off/Lumière Etat. Une seule lampe par équipement est possible.
 
@@ -43,17 +43,17 @@ Sur chaque équipement "Light Management", vous retrouvez un tableau avec les é
 
 ### Gestion des paramètres
 
-Des paramètres sont utilisés par le plugin et sont ajustable à plusieurs niveaux (valeur par défaut, page de conf du plugin, page de l'équipement, modal de l'ambiance). La valeur utilisée est connue ainsi :
+Des paramètres sont utilisés par le plugin et sont ajustables à plusieurs niveaux (valeur par défaut, page de conf du plugin, page de l'équipement, modal de l'ambiance). La valeur utilisée est connue ainsi :
 
 - valeur présente sur le modal de l'ambiance en premier
 
-- sinon, si définie sur l'équipement, c'est cette valeur qui est précise
+- sinon, si définie sur l'équipement, c'est cette valeur qui est précisée
 
 - sinon, si définie sur la page de configuration du plugin
 
 - par défaut si rien d'autre n'est défini, c'est la valeur par défaut (visible sur la page de configuration)
 
-Ainsi, si on défini une durée d'allumage de 2mn sur la page de configuration, et 20mn pour le salon, c'est bien 20 qui sera utilisé pour la lumière du salon.
+Ainsi, si on définit une durée d'allumage de 2 mns sur la page de configuration, et 20 mns pour le salon, c'est bien 20 qui sera utilisé pour la lumière du salon.
 
 Les paramètres disponibles :
 
@@ -73,7 +73,7 @@ Les paramètres disponibles :
 
 Si vous voulez saisir plusieurs détecteurs de mouvement, il faut bien mettre && entre chaque dans le champ.
 
-Sur détection d'un mouvement, la lumière sera déclenché pour le mode courant, SAUF :
+Sur détection d'un mouvement, la lumière sera déclenchée pour le mode courant, SAUF :
 
   - si la luminosité est suffisante
   
@@ -83,13 +83,13 @@ Sur détection d'un mouvement, la lumière sera déclenché pour le mode courant
   
 ### Extinction automatique
 
-Ce paramètre permet de mettre en place une vérification automatique que les lumières non nécessaires sont éteintes quand les détecteur de mouvement n'ont plus de présence. Il est sans effet si le trigger n'est pas renseigné.
+Ce paramètre permet de mettre en place une vérification automatique que les lumières non nécessaires sont éteintes quand les détecteurs de mouvement n'ont plus de présence. Il est sans effet si le trigger n'est pas renseigné.
 
-### Controle manuel
+### Contrôle manuel
 
 Plusieurs actions sont disponibles, des classiques : luminosités, on, off, température, couleur. Elles sont envoyées à toutes les lumières de manière normales.
 
-Le toggle : lui envoit un off à toutes les lumières, si AU MOINS 1 lumière est allumée
+Le toggle : lui envoie un off à toutes les lumières, si AU MOINS 1 lumière est allumée
 
 Le "Mode Courant" : active le mode défini avec (Mode Select) -> c'est ce mode qui est lancé par les détecteurs de mouvement
 
@@ -99,25 +99,25 @@ Le "Mode Once" : va lancer juste cette fois un mode sélectionné dans le menu
 
 ### Les modes
 
-Le plugin permet de gérer différents mode. Certains viennent en standard, mais il est possible de créer des personnalisés.
+Le plugin permet de gérer différents modes. Certains viennent en standard, mais il est possible de créer des personnalisés.
 
 Pour les standards, ils concernent toutes les lampes de l'équipement :
 
   - Général : équivalent au classique, enverra un ON à toutes les lampes
   
-  - Off : fait en sorte que toutes commande sans "Force" ne déclenchent pas l'allumage
+  - Off : fait en sorte que toute commande sans "Force" ne déclenche pas l'allumage
   
   - Relax, Calme, Neutre, Attentif, Concentration : sont des modes utilisant des recommandations de luminosité/température pour le bien-être
   
   - Naturel : active les lumières dans une luminosité/température reproduisant le cycle naturel du soleil
   
-Pour les modes personnalisés, via le modal vous poivez choisir pour chaque lampe son état.
+Pour les modes personnalisés, via le modal vous pouvez choisir pour chaque lampe son état.
 
 ### Statut
 
-Les statuts luminosité, température et couleur sont liés à l'équipement global sans corrélation par rapport aux lampes qui le constitue
+Les statuts luminosité, température et couleur sont liés à l'équipement global sans corrélation par rapport aux lampes qui le constituent
 
-Par contre pour le statut général, il est à 1 si AU MOINS 1 lampe est allumé. Pour être à 0, tout doit être éteint.
+Par contre, pour le statut général, il est à 1 si AU MOINS 1 lampe est allumée. Pour être à 0, tout doit être éteint.
 
 Un indicateur permet de connaitre le nombre de lampes allumées.
 
