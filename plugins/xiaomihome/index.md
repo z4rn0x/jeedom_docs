@@ -9,7 +9,7 @@ Le plugin implémente 3 protocoles Xiaomi, ce qui donne un éventail conséquent
 ### **Le protocole zigbee Xiaomi Aqara**
 La Xiaomi Mi Home Gateway (aussi appelée **passerelle Xiaomi**) permet d'utiliser différents capteurs Zigbee de Xiaomi. [Voir la doc Aqara](aqara.md).
 
-Attention, la gateway Aqara Homekit est différente et ne possède pas l'API permettant une connexion à la domotique. De plus cette nouvelle gateway ne permet d'utiliser que les nouveaux capteurs estampillés "Aqara" généralement (de formes carrés/rectangulaires)
+Attention, la gateway Aqara Homekit est différente et ne possède pas l'API permettant une connexion à la domotique. De plus, cette nouvelle gateway ne permet d'utiliser que les nouveaux capteurs estampillés "Aqara" généralement (de formes carrés/rectangulaires)
 
 ### **Les lumières Yeelight**
 
@@ -39,7 +39,7 @@ Il faut également bien utiliser l'application sur smartphone **Mi Home** en **a
 >Une information de mes capteurs ne remonte pas ?
 
 Si vous n'avez pas de commande équivalente créée dans Jeedom, l'API n'expose peut-être pas cette information. Il faut attendre peut être une mise à jour du firmware.
-Toute les informations ne remontent pas à la même fréquence, par exemple la batterie peut n'être envoyée que quotidiennement.
+Toutes les informations ne remontent pas à la même fréquence, par exemple la batterie peut n'être envoyée que quotidiennement.
 
 >Je n'arrive pas à contrôler mes capteurs Aqara (couleur et son gateway, prise ...) ?
 
@@ -55,21 +55,21 @@ Vérifiez que votre routeur laisse bien passer les paquets broadcast du réseau 
 
 >Mon Jeedom est installé sur Docker et ne voit pas la gateway ?
 
-La gateway communique en broadcast, il faut donc être sur le même réseau (mode host) et s'assurer que les paquets Broadcast sont recu sur Jeedom.
+La gateway communique en broadcast, il faut donc être sur le même réseau (mode host) et s'assurer que les paquets Broadcast sont reçus sur Jeedom.
 
->Jeedom ne voit pas la nouvelle gateway estampillée "Aqara Homekit" ?
+>Jeedom ne voit pas la nouvelle Gateway estampillée "Aqara Homekit" ?
 
-Elle ne propose pas l'API Aqara, elle ne fonctionne pas avec le plugin, il faut bien prendre le modèle présenté dans la doc. De plus la passerelle Homekit n'est pas compatible avec l'intégralité des modèles de capteurs Xiaomi.
+Elle ne propose pas l'API Aqara, elle ne fonctionne pas avec le plugin, il faut bien prendre le modèle présenté dans la doc. De plus, la passerelle Homekit n'est pas compatible avec l'intégralité des modèles de capteurs Xiaomi.
 
 >Jeedom ne voit pas ma gateway ?
 
-Elle doit remontée seule dans Jeedom, si ce n'est pas le cas il est possible de vérifier si elle est correctement paramétrée avec la commande :
+Elle doit remonter seule dans Jeedom. Si ce n'est pas le cas, il est possible de vérifier si elle est correctement paramétrée avec la commande :
 
   nmap -p 9898 -sU ip.ga.te.way
 
 >Combien de capteurs au maximum peut-il y avoir sur une Gateway Aqara ?
 
-Les remontées utilisateurs indiquent **31 capteurs + la Gateway**. Au delà il faut supprimer l'appairage d'un capteur pour en remettre un. Le plugin supporte plusieurs Gateways.
+Les remontées utilisateurs indiquent **31 capteurs + la Gateway**. Au delà, il faut supprimer l'appairage d'un capteur pour en remettre un. Le plugin supporte plusieurs Gateways.
 
 >Quelles ampoules sont supportées par ce plugin ?
 
