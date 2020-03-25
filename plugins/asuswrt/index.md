@@ -20,7 +20,7 @@ Il faut bien activer l'accès au SSH par l'adresse locale.
 
 ### Configuration d'un équipement
 
-Il est possible par équipement de sélectionner un plugin dans lequel il est présent, l'équipement du plugin sera alors activer/désactiver automatiquement suivant sa présence sur le routeur.
+Il est possible par équipement de sélectionner un plugin dans lequel il est présent, l'équipement du plugin sera alors activé/désactivé automatiquement suivant sa présence sur le routeur.
 
 Les seuls plugins pris en charge sont : Xiaomi Home, Shelly et Hikvision
 
