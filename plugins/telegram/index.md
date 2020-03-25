@@ -22,7 +22,7 @@ Un certificat letsencrypt fonctionne (en ayant bien paramétré le certificat de
 
 ### Configuration d'un équipement
 
-Chaque équipement correspond à un Bot telegram
+Chaque équipement correspond à un Bot Telegram
 
 Vous devez donc rentrer la clef fournie par Telegram à la création du bot sur la page équipement
 
