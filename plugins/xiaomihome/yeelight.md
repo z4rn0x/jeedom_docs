@@ -4,11 +4,11 @@
 
 Une présentation complète de la gamme est disponible ici : [Article de présentation](https://lunarok-domotique.com/plugins-jeedom/xiaomi-home-jeedom/yeelight-xiaomi-wifi-lamp/).
 
-Dans l'application Yeelight vous devez activer l'**option de contrôle** sur réseau local. C'est un switch à activer dans les options de chaque ampoule/bandeau. Par ailleurs, il faut que les équipements soient sur le même réseau que Jeedom.
+Dans l'application Yeelight, vous devez activer l'**option de contrôle** sur réseau local. C'est un switch à activer dans les options de chaque ampoule/bandeau. Par ailleurs, il faut que les équipements soient sur le même réseau que Jeedom.
 
 ## Création des équipements
 
-Un bouton de **scan** permet de créer automatiquement tous les équipements répondant au protocole Yeelight disponibles sur le réseau (uniquement celles qui n'existent pas déjà dans Jeedom, bien sûr).
+Un bouton de **scan** permet de créer automatiquement tous les équipements répondant au protocole Yeelight disponibles sur le réseau (uniquement ceux qui n'existent pas déjà dans Jeedom, bien sûr).
 
 ## Commandes des équipements compatibles
 
@@ -28,13 +28,13 @@ Certaines lampes ajoutent des commandes :
 ### La commande enchainement
 
 Une commande spéciale **enchainement** est créée. Elle a vocation à être utilisée dans un scénario uniquement, car on doit envoyer un contenu précis à la commande.
-Voici un exemple commentée de cette commande :
+Voici un exemple commenté de cette commande :
 
 > **`3 recover rgb,255,0,0,500,100-wait,400-rgb,255,255,0,500,100`**
 
 * **`3`** : Définit le nombre de fois que la suite d'effets doit être appliquée avant de s'arrêter (0 veut dire illimité).
 * **`recover`** : une des 3 options possibles pour la fin de l'enchaînement (`recover` = revient à l'état précédant l'enchaînement, `off` = s'éteint, `stay` = reste au statut de la fin de l'enchaînement)
-* le troisième élément est la suite des états avec leur transition, il y a 4 possibles (attention : il ne faut pas mettre d'espace) :
+* le troisième élément est la suite des états avec leur transition, il y en a 4 possibles (attention : il ne faut pas mettre d'espace) :
   * **`hsv`** : paramètres (hue,saturation,duration=300,brightness=100).
   * **`rgb`** : paramètres (red,green,blue,duration=300,brightness=100).
   * **`temp`** : paramètres (degrees,duration=300,brightness=100).
