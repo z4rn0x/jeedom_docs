@@ -46,7 +46,7 @@ Merci _pierre_ pour cette technique :
 * Ouvrez le fichier **sqlite** avec un viewer sqlite, par exemple **[DB Browser](http://sqlitebrowser.org)**.
 * Cliquez sur **Ouvrir une base de données** puis **Parcourir les données** et enfin choisissez la table **ZDEVICE**.
 * Tout à droite, il doit y avoir une colonne **ZTOKEN** avec tous les tokens de vos périphériques Xiaomi.
-* La dernière version de l'application Mi Home sur iPhone stocke les tokens sous un format encrypté. Pour le decrypter, aller **[sur ce site](http://aes.online-domain-tools.com/)** et saisir les informations suivantes : 
+* La dernière version de l'application Mi Home sur iPhone stocke les tokens sous un format encrypté. Pour le décrypter, aller **[sur ce site](http://aes.online-domain-tools.com/)** et saisir les informations suivantes : 
   * Input type : text
   * Input text (hex): la clé de 96 caractères précédemment récupérée dans la colonne **ZTOKEN**
   * Selectbox Plaintext / Hex: Hex
@@ -54,7 +54,7 @@ Merci _pierre_ pour cette technique :
   * Mode: ECB
   * Key (hex): 00000000000000000000000000000000
   * Selectbox Plaintext / Hex: Hex
-  * Cliquer sur le bouton `Decrypt`. Votre token sont les deux premières lignes sur le bloc de droite. Ces deux lignes devrait contenir votre token de 32 caractères.
+  * Cliquer sur le bouton `Decrypt`. Votre token sont les deux premières lignes sur le bloc de droite. Ces deux lignes devraient contenir votre token de 32 caractères.
 
 ### 4ème méthode (Android)
 * Autoriser les sources inconnues:
@@ -66,14 +66,14 @@ Merci _pierre_ pour cette technique :
 
  https://drive.google.com/drive/folders/18OyC78peggCdiMmmT7i5bpvpdMJl1Ec1?usp=sharing
 
-* L’installer, l’ouvrir se connecter avec son identifiant xiaomi afin de récupérer sa configuration habituelle.
+* L’installer, l’ouvrir se connecter avec son identifiant Xiaomi afin de récupérer sa configuration habituelle.
 * Récupérer son token:
- Sur la nouvelle appli mi home : Aller sur l'appliance, menu configuration / général settings / informations sur le réseau
+ Sur la nouvelle appli Mi Home : Aller sur l'appliance, menu configuration / général settings / informations sur le réseau
  Deux lignes nous intéressent : l’adresse IP locale du robot et le token
- Notez précieusement et sans erreur ces informations. Quand c’est bon, vous pouvez désinstaller mi home modifié pour réinstaller la version officielle
+ Notez précieusement et sans erreur ces informations. Quand c’est bon, vous pouvez désinstaller Mi Home modifié pour réinstaller la version officielle.
  
 ### 5ème méthode (Packet Sender Tool)
-During setup of Mi Home devices the device tokens an be retrieved by sending a ping command to the device. This method uses a tool called Packet Sender which you will need to download. Choose the portable version which does not require installation.
+During setup of Mi Home devices the device tokens can be retrieved by sending a ping command to the device. This method uses a tool called Packet Sender which you will need to download. Choose the portable version which does not require installation.
 • Download the portable version of Packet Sender.
 • Reset the device following the instructions from the device manual, this usually means holding one or two buttons for 10 seconds. This will reset all device settings including the Wi-Fi settings.
 • After reset the device will create a it's own Wi-Fi network. This network will have a name related to the device and is used for configuring the device but will also allow us to retrieve the token. Connect to this Wi-Fi network with your computer which has Packet Sender running.
@@ -89,13 +89,13 @@ o Protocol dropdown: UDP
 ### Extraction depuis les logs Mi Home (Android)
 
 Une méthode simple sur Android consiste à installer la version 5.4.49 de Mi Home. Le fichier d'installation est facile à trouver par exemple sur apkmirror. Cette version a pour particularité de créer un fichier de log contenant toutes les infos des devices.
-Une fois installée, il suffit de l'ouvrir et se connecter. A ce moment là vous aurez déjà un fichier de log avec toutes les infos. Il se situe à cet emplacement : SmartHome/logs/plug_DeviceManager
+Une fois installée, il suffit de l'ouvrir et se connecter. A ce moment là, vous aurez déjà un fichier de log avec toutes les infos. Il se situe à cet emplacement : SmartHome/logs/plug_DeviceManager
 
 ## Configuration des équipements Wifi
 
 Cette section traite des équipements Wifi additionnels. Il n'est pas question de Yeelight ou de la gateway Aqara.
 
-* **Xiaomi Mi Robot Vacuum** : online, statut, batterie, aspiration (force + slider, attention au delà de 77 vous dépassez le mode turbo), surface nettoyée, durée nettoyage, état des erreurs, puissance aspiration, démarrer, arrêter, pause, retour socle, fonction spot, "où es-tu ?", rafraichir.
+* **Xiaomi Mi Robot Vacuum** : online, statut, batterie, aspiration (force + slider, attention au delà de 77, vous dépassez le mode turbo), surface nettoyée, durée nettoyage, état des erreurs, puissance aspiration, démarrer, arrêter, pause, retour socle, fonction spot, "où es-tu ?", rafraichir.
 * **Viomi Vacuum STYJ02YM** : online, statut, batterie, aspiration, mode serpillère, surface nettoyée, durée nettoyage, état des erreurs, puissance aspiration, démarrer, arrêter, pause, retour socle, Map ID, définir Map, mode pièces, rafraichir.
 * **Xiaomi Smart Mi Air Purifier (y compris Pro ou V2 avec écran)** : statut, qualité d'air, humidité, température, filtre, vitesse, buzzer (on/off), led (action dessus aussi), démarrer/arrêter (avec les différents modes disponibles).
 * **Xiaomi Smart Ultrasonic Humidifier** : statut, mode, humidité, humidité cible (+slider de set), température, buzzer (statut + activation), led (statut + activation), démarrer/arrêter (avec les différents modes disponibles).
@@ -110,7 +110,7 @@ Cette section traite des équipements Wifi additionnels. Il n'est pas question d
 
 Pour le Viomi, le mode pièces permet de lui demander le passage sur une liste de pièces.
 
-D'abord vous devez vous assurez d'être sur la bonne Map (une commande info vous donne la map actuelle, une commande action permet de la changer en fournissant l'ID dans le message)
+D'abord, vous devez vous assurer d'être sur la bonne Map (une commande info vous donne la map actuelle, une commande action permet de la changer en fournissant l'ID dans le message)
 
 Ensuite, pour lancer la commande pièces, il faut dans le message mettre par exemple : 0,1,1,17.
 
@@ -120,7 +120,7 @@ Ce qui signifie :
 
 * Deuxième chiffre : démarrer (1) ou pause (2)
 
-* Troisième chiffre : le nombre de pièce à effectuer
+* Troisième chiffre : le nombre de pièces à effectuer
 
 * Quatrième chiffre et suivant : les ID des pièces (qui commencent à 10, pas à 0)
 
