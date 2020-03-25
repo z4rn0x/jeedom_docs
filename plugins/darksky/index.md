@@ -6,11 +6,11 @@ Ce plugin permet d'obtenir la météo depuis le site DarkSKy.net qui dispose de 
 
 Une présentation est disponible sur cet article : [Article de présentation](https://lunarok-domotique.com/plugins-jeedom/dark-sky-meteo-panel/)
 
-Le plugin dispose de différentes fréquence de rafraichissement :
+Le plugin dispose de différentes fréquences de rafraichissement :
 
-  - toutes les 5mn : les informations temps réel
+  - toutes les 5 mns : les informations temps réel
 
-  - toutes les heures : les prévisions à l'heures
+  - toutes les heures : les prévisions à l'heure
 
   - journalier : les prévisions au jour (météo mais aussi lever et coucher du soleil)
 
@@ -23,7 +23,7 @@ Le plugin ne comporte pas de configuration générale.
 
 Il faut ajouter un équipement et configurer les 2 paramètres :
 
-  - quel équipement de localisation (configuration de jeedom ou geotrav) servira pour les coordonnées de la météo à récupérer
+  - quel équipement de localisation (configuration de Jeedom ou geotrav) servira pour les coordonnées de la météo à récupérer
 
   - la clef API de Dark Sky (https://darksky.net/dev/)
 
