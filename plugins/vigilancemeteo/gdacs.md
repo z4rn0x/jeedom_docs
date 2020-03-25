@@ -14,7 +14,7 @@ Ce plugin permet d'obtenir les informations sur le dernier phénomène des types
 
 * Cyclones
 
-* Innondations
+* Inondations
 
 * Volcan
 
