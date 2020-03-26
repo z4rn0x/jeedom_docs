@@ -4,7 +4,7 @@
 
 Ce plugin permet de récupérer les informations d'onduleurs APC et également d'être averti sur leurs évènements.
 
-Il utilise apcupsd en dépendance (installer pendant l'activation du plugin) et permet de gérer un onduleur APC en USB ou distant.
+Il utilise apcupsd en dépendance (installé pendant l'activation du plugin) et permet de gérer un onduleur APC en USB ou distant.
 
 Les informations fournies sont :
 
@@ -15,7 +15,7 @@ Les informations fournies sont :
 * Statut : le statut de l'onduleur
 * Temps sur batterie : la durée d'autonomie disponible
 * Voltage pile : tension de la pile
-* Evènement : tout évènement détecté par le service apcupsd qui est transmit en push à Jeedom
+* Evènement : tout évènement détecté par le service apcupsd qui est transmis en push à Jeedom
 
 ## Configuration
 
@@ -62,7 +62,7 @@ La durée de batterie peut être un bon complément dans les scénarios déclenc
 
 #### Installation d'apcupsd
 
-Apcupsd doit être installé biensur, c'est lui qui sera interrogé
+Apcupsd doit être installé bien sûr, c'est lui qui sera interrogé
 
 Il faut donc l'installer via la méthode appropriée sur votre système
 
@@ -80,12 +80,12 @@ Copier celle qui est présente sur Jeedom
 
 #### Configuration dans Jeedom
 
-Maintenant il n'y a plus qu'à ajouter un équipement et renseigner l'adresse que vous avez remplie dans la configuration
+Maintenant, il n'y a plus qu'à ajouter un équipement et renseigner l'adresse que vous avez remplie dans la configuration
 
 ### Evènements fournis par apcupsd
 
 
-Voici la liste des évènements que peux envoyer apcupsd
+Voici la liste des évènements que peut envoyer apcupsd
 
 * annoyme : When a shutdown is scheduled, and the time specified on the ANNOYME directive in the apcupsd.conf file expires, this event is generated.
 
