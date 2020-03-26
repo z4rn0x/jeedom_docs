@@ -24,7 +24,7 @@ Sur chaque équipement il faut configurer :
 
   - les paramètres par défaut de vitesse, statique et luminosité
 
-  - si l'on déssire activer la gestion locale avec le message à afficher
+  - si l'on désire activer la gestion locale avec le message à afficher
 
 Le champ "Message à afficher" prend les fonctions et les commandes informations en arguments, comme dans un scénario. Ce qui permet de rendre le texte dynamique. Il est rafraichi toutes les minutes.
 
