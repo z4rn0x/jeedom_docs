@@ -4,7 +4,7 @@
 
 Ce plugin permet d'utiliser Gammu pour envoyer et recevoir des SMS
 
-Vous devriez d'abord vérifier si votre clef est reconnu par le plugin officiel avant d'utiliser celui-ci
+Vous devriez d'abord vérifier si votre clef est reconnue par le plugin officiel avant d'utiliser celui-ci
 
 Si la clef ne fonctionne pas avec le plugin officiel, et qu'elle est supportée par Gammu, alors ce plugin devrait fonctionner
 
@@ -36,7 +36,7 @@ Non, il se connecte directement à une clef 3G
 
 > Je n'ai pas de retour de SMS
 
-Il faut bien avoir configurer le numéro pour autoriser les interactions
+Il faut bien avoir configuré le numéro pour autoriser les interactions
 
 ## Changelog
 
