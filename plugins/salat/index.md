@@ -2,7 +2,7 @@
 
 ## Présentation
 
-Le plugin permet de récpérer les informations suivantes d'un lieu :
+Le plugin permet de récupérer les informations suivantes d'un lieu :
 
  * Date du jour au calendrier Hijra
  * Evènement si c'est un jour spécial (Idul, début de l'année ...)
@@ -15,7 +15,7 @@ Le plugin permet de récpérer les informations suivantes d'un lieu :
 
 Le plugin ne comporte pas de configuration générale.
 
-Il faut ajouter un équipement et saisir les informations de geolocalisation et règles de calcul souhaitées pour obtenir les informations du lieu
+Il faut ajouter un équipement et saisir les informations de géolocalisation et règles de calcul souhaitées pour obtenir les informations du lieu
 
 Les paramètres disponibles sont :
 
