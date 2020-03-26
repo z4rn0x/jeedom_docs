@@ -33,13 +33,13 @@ image::../images/ISSConfig.jpg[Configuration du plugin]
 
 Vous pouvez ici sélectionner les équipements à transmettre, et visualiser le type d'équipement automatiquement détecté.
 
-Une fois les équipements sélectionnés, cliquer sur "Sauvegarder". Sous Imperihome, il se peut que l'équipement ne remonte pas immédiatement. Pour forcer la mise à jour, cliquer sur la double fléche rotative en haut à droite de l'écran sous Imperihome.
+Une fois les équipements sélectionnés, cliquer sur "Sauvegarder". Sous Imperihome, il se peut que l'équipement ne remonte pas immédiatement. Pour forcer la mise à jour, cliquer sur la double flèche rotative en haut à droite de l'écran sous Imperihome.
 
 ### Détermination automatique du type d'équipement
 Dans le mesure du possible, le plugin essaie de reconnaitre les équipements et de leur donner un type "Imperihome" adapté.
 En automatique, le plugin transforme les commandes de type "info" en un équipement.
 
-Si on prend en exemple une prise de courant télécommandée et qui remonte les informations de consommation, celle-ci aura deux commandes de type "info": Etat et Conso.
+Si on prend en exemple, une prise de courant télécommandée et qui remonte les informations de consommation, celle-ci aura deux commandes de type "info": Etat et Conso.
 
 Le plugin va alors créer 2 équipements: un de type "devSwitch" (pour Etat) et l'autre de type "devElectricity" pour Conso.
 
@@ -57,7 +57,7 @@ Vous retrouvez ici les équipements configurés manuellement.
 
 Vous pouvez les modifier ou supprimer, ou en créer un nouveau.
 
-Lorsque vous cliquer sur "Ajouter un équipement" ou Modifier, la fenêtre qui s'ouvre permet de configurer l'équipement.
+Lorsque vous cliquez sur "Ajouter un équipement" ou Modifier, la fenêtre qui s'ouvre permet de configurer l'équipement.
 
 image::../images/ISSEqAdvancedConfig1.jpg[Configuration du plugin]
 
@@ -65,7 +65,7 @@ Il faut alors configurer la commande support: celle-ci correspond au nom de l'é
 
 Ensuite, il faut sélectionner le type d'équipement (https://imperihome.zendesk.com/hc/en-us/articles/202088308-ImperiHome-Standard-System-API-definition[se reporter à la doc Imperihome]).
 
-Ensuite, vous pouvez configurer chaque paramétre et action.
+Ensuite, vous pouvez configurer chaque paramètre et action.
 
 image::../images/ISSEqAdvancedConfig2.jpg[Configuration du plugin]
 
@@ -88,13 +88,13 @@ Il faudra alors selectionner le type "Standard On/Off switch".
 
 Sauvegarder la configuration, puis réactualiser la liste des équipements sous Imperihome.
 
-Il y a une subtilité pour le type MultiSwitch et son action SetChoice. Si une commande est renseignée, alors elle sera appelée en lui passant comme paramètre la valeur sélectionnée dans Imperihome. Si aucune commande n'est renseignée, alors le plugin recherchera une commange ayant comme nom la valeur sélectrionnée dans Imperihome au sein du même équipement que la commande support.
+Il y a une subtilité pour le type MultiSwitch et son action SetChoice. Si une commande est renseignée, alors elle sera appelée en lui passant comme paramètre la valeur sélectionnée dans Imperihome. Si aucune commande n'est renseignée, alors le plugin recherchera une commande ayant comme nom la valeur sélectionnée dans Imperihome au sein du même équipement que la commande support.
 
 ## Paramétrage
 
 ### Explication
 
-Le système de détection automatique se base sur un certains nombre de critère afin de déterminer le type le plus adapté à Imperihome.
+Le système de détection automatique se base sur un certain nombre de critères afin de déterminer le type le plus adapté à Imperihome.
 
 Ci-dessous, vous trouverez les différents critères pour pouvoir avoir une détection optimale.
 
@@ -329,21 +329,21 @@ Pas de détection automatique sur ce type. Utiliser le mode avancé.
 
 ## Controle ImperiHome
 
-Il est possible de créer des équipements qui représentent des clients Imperihome, cela permet de les controler par api
+Il est possible de créer des équipements qui représentent des clients Imperihome, cela permet de les contrôler par api
 
 Il est nécessaire de saisir l'adresse IP (avec le port) en configuration
 
 Ensuite les commandes suivantes seront disponibles :
 
-  - Lancer une page : ouvre une page sur l'imperihome, il faut saisir l'ID de la page dans le message
+  - Lancer une page : ouvre une page sur l'Imperihome, il faut saisir l'ID de la page dans le message
 
   - Lancer une camera : ouvre une caméra en plein écran, il faut saisir l'ID de la caméra dans le message
 
   - Lancer la reconnaissance vocale : fait passer Imperihome en reconnaissance Vocale
 
-  - Lire un message TTS : lit le message envoyé, si un titre est saisi il doit être numérique de 0 à 100 et sera le volume en %
+  - Lire un message TTS : lit le message envoyé, si un titre est saisi, il doit être numérique de 0 à 100 et sera le volume en %
 
-  - Réveiller : permet de réveiller la tablette/téléphone d'imperihome
+  - Réveiller : permet de réveiller la tablette/téléphone d'Imperihome
 
 
 ## FAQ
