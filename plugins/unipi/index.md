@@ -27,7 +27,7 @@ Si vous ajoutez des sondes 1wire, une simple sauvegarde devrait créer les infor
 
 L'équipement complet est visible sur le doNotShowNameOnDashboard
 
-Les informations sont recues en temps réel de la carte via un websocket connecté à l'Unipi. Un cron de fond permet de sécuriser l'état en refaisant la requête auprès de l'API Evok
+Les informations sont reçues en temps réel de la carte via un websocket connecté à l'Unipi. Un cron de fond permet de sécuriser l'état en refaisant la requête auprès de l'API Evok
 
 ## FAQ
 
