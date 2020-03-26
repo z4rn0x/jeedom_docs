@@ -2,15 +2,15 @@
 
 ## Présentation
 
-Le plugin MySensors permet d'utiliser des équipement utilisant le protocole MySensors.
+Le plugin MySensors permet d'utiliser des équipements utilisant le protocole MySensors.
 
-Les équiments MySensors sont des capteurs ou actionneurs à base d'Arduino et d'une puce NRF24L01 pour la communication
+Les équipements MySensors sont des capteurs ou actionneurs à base d'Arduino et d'une puce NRF24L01 pour la communication
 
-A monter soit même, dans la mouvance DIY (Do It Yourself, Faites le Vous Même), ce qui permet d'avoir un coût de revient très faible et une flexibilité sans limite. Les limites de possibilités mySensors sont celles du catalogue de composants connectables à un Arduino et les exemples existants.
+A monter soi-même, dans la mouvance DIY (Do It Yourself, Faites-le Vous Même), ce qui permet d'avoir un coût de revient très faible et une flexibilité sans limite. Les limites de possibilités mySensors sont celles du catalogue de composants connectables à un Arduino et les exemples existants.
 
 ### Que fait le plugin Jeedom pour mySensors
 
-Le plugin mySensors permet d'utiliser les équipements mySensors via une gateway série ou réseau.
+Le plugin mySensors permet d'utiliser les équipements mySensors via une Gateway série ou réseau.
 
 Le plugin permet :
 
@@ -24,19 +24,19 @@ Le plugin permet :
 
 ### Configuration du plugin
 
-Sur la page de configuration du plugin, vous pourrez sélectionner la ou les gateway à utiliser.
+Sur la page de configuration du plugin, vous pourrez sélectionner la ou les Gateway(s) à utiliser.
 
-Attention toutefois, il n'est pas conseillé d'avoir 2 gateways pour le même réseau de nodes.
+Attention toutefois, il n'est pas conseillé d'avoir 2 Gateways pour le même réseau de nodes.
 
-Aussi, vous pourrez avoir deux jeedom éloignés gérant le même type de noeuds (NRF) sur la même fréquence. Mais si les 2 sont à portée de plusieurs capteurs, il faudra avoir des fréquences différentes ou des puces RF différentes (NRF et RFM)
+Aussi, vous pourrez avoir deux Jeedom éloignés gérant le même type de noeuds (NRF) sur la même fréquence. Mais si les 2 sont à portée de plusieurs capteurs, il faudra avoir des fréquences différentes ou des puces RF différentes (NRF et RFM)
 
 #### Serial Gateway
 
-Vous pouvez sélectionner une gateway série par Jeedom installé (maitre ou esclave)
+Vous pouvez sélectionner une Gateway série par Jeedom installé (maitre ou esclave)
 
 #### Network Gateway
 
-Vous pouvez ajouter des gateways réseaux.
+Vous pouvez ajouter des Gateways réseaux.
 
 ### Menu mySensors
 
@@ -48,7 +48,7 @@ Les équipements Jeedom sont automatiquement créés au démarrage des nodes.
 
 De la même facon que les équipements sont automatiquement créés à l'arrivée de nouveaux nodes, les capteurs des nodes sont automatiquement créés comme des "Informations" dans Jeedom.
 
-Exemple : si on reprend le cas du capteur de température, le protocole mySensors inclut une présentation du noeud sur son réseau, il envoit les informations qu'il fournit : température, niveau de batterie, humidité ... automatiquement, le controleur créé les informations associées avec leur SENSOR_ID (que vous avec dans le sketch injecté sur l'Arduino)
+Exemple : si on reprend le cas du capteur de température, le protocole mySensors inclut une présentation du noeud sur son réseau, il envoie les informations qu'il fournit : température, niveau de batterie, humidité ... automatiquement, le contrôleur créé les informations associées avec leur SENSOR_ID (que vous avez dans le sketch injecté sur l'Arduino)
 
 #### Configuration des commandes des nodes
 
@@ -73,13 +73,13 @@ et les options nécessaires.
 
 Non.
 
->Quel type de gateway mySensors est supporté ?
+>Quel type de Gateway mySensors est supporté ?
 
-On peut utiliser une gateway sur port USB ou réseau (voir les liens de documentation plus bas pour plus d'informations)
+On peut utiliser une Gateway sur port USB ou réseau (voir les liens de documentation plus bas pour plus d'informations)
 
 La gateway USB peut être utilisée sur le Jeedom principal ou un satellite
 
-Les gateway NRF ou RFM sont supportées (attention à bien utiliser un seul des deux sur un réseau unique)
+Les Gateways NRF ou RFM sont supportées (attention à bien utiliser un seul des deux sur un réseau unique)
 
 >Qu'est-ce que mySensors ?
 
@@ -89,13 +89,13 @@ Des exemples de capteurs sont proposés sur le site mySensors, mais les limites 
 
 Dans la section autres documentations, un lien vers le site mySensors est disponible (en anglais) et également des liens vers des noeuds en francais
 
->Ma passerelle est branchée en USB sur un jeedom satellite et le service ne démarre pas ?
+>Ma passerelle est branchée en USB sur un Jeedom satellite et le service ne démarre pas ?
 
 Vérifier votre configuration réseau Jeedom dans Général->Administration->Configuration dans la partie Réseau
 
 >Le champ "version de librairie" de ma passerelle ne se remplit pas ?
 
-Il faut adapter le sketch de la passerelle pour qu'elle envoit cette information, ce qui n'est pas le cas dans la lib 1.4.1
+Il faut adapter le sketch de la passerelle pour qu'elle envoie cette information, ce qui n'est pas le cas dans la lib 1.4.1
 
 La ligne à ajouter :
 
@@ -115,11 +115,11 @@ Il faut bien penser à décocher la case "Evènement seulement" côté Jeedom.
 
 Il existe également une possibilité de lier un capteur d'un noeud à une information quelconque de Jeedom.
 
-Pour cela le sensor doit être déclaré en type "Custom", un bouton de sélection d'une information Jeedom est alors disponible à côté du champ valeur.
+Pour cela, le sensor doit être déclaré en type "Custom", un bouton de sélection d'une information Jeedom est alors disponible à côté du champ valeur.
 
 Il faut également du côté noeud, faire un get avec le type de données VAR5 pour que le plugin comprenne qu'on vient chercher une valeur virtuelle.
 
-Pour résumé ::
+Pour résumer ::
   Sensor Custom + Data VAR5 : toute information de Jeedom devient accessible au noeud (température d'un capteur Zwave, consigne virtuelle ...)
 
 ## Changelog
