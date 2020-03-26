@@ -1,4 +1,4 @@
-# Héliotrope : lever, coucher, zenith, azimuth et altitude du soleil
+# Héliotrope : lever, coucher, zénith, azimuth et altitude du soleil
 
 ## Présentation
 
@@ -18,7 +18,7 @@ Ce plugin utilise une information venant de la conf Jeedom ou du plugin Localisa
 
 Un autre paramètre est disponible pour paramétrer l'angle qu'on souhaite utiliser pour le calcul du coucher et lever du soleil uniquement (par défaut 90.58, ce qui est utilisé en général)
 
-Le plugin apporte différentes informations, certaines sont calculées quotidiennement, d'autres sont rafraichit par le cron dédié.
+Le plugin apporte différentes informations, certaines sont calculées quotidiennement, d'autres sont rafraichies par le cron dédié.
 
 
 Informations à rafraichissement quotidien (le calcul est fait à 3h du matin, sur démarrage de la box Jeedom ou sur sauvegarde de l'équipement) :
@@ -29,7 +29,7 @@ Informations à rafraichissement quotidien (le calcul est fait à 3h du matin, s
 
   - durée de la journée (entre lever du soleil et coucher du soleil)
 
-  - zenith du soleil
+  - zénith du soleil
 
   - aube astronomique (lever du soleil -18°)
 
@@ -153,7 +153,7 @@ Il faut bien créer un équipement et remplir les informations du lieu pour lequ
 
 >Est-ce que je peux me servir des heures calculées pour déclencher des scénarios ?
 
-Oui, il suffit de saisir la commande voulue comme déclencheur pui de créer une condition A #commande##heure##voulue#
+Oui, il suffit de saisir la commande voulue comme déclencheur puis de créer une condition A #commande##heure##voulue#
 
 ## Changelog
 
