@@ -4,7 +4,7 @@ Ce plugin permet d'obtenir des informations sur la météo des plages depuis le 
 
 #### Configuration du type
 
-Il faut choisir un équipement de type geotrav, en seront déduis le nom de la ville et le code postal
+Il faut choisir un équipement de type geotrav, en seront déduits le nom de la ville et le code postal
 
 #### Informations disponibles
 
