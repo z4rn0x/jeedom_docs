@@ -12,7 +12,7 @@ Il faut renseigner l'équipement de localisation
 
 #### Informations disponibles
 
-Le plugin affiche une barre d’une durée de 1H, qui présente la prévision de pluie par tranche de 5 minutes.
+Le plugin affiche une barre d’une durée de 1H, qui présente la prévision de pluie par tranches de 5 minutes.
 
 Les prévisions possibles sont:
 
@@ -32,4 +32,4 @@ Si celle*ci est inférieure ou égale à 12 (12 périodes de valeur 1: pas de pl
 
 Puis, plus la valeur augmente, plus la probabilité de pluie (et la quantité) augmente. La valeur maximale est de 48 (1H de pluie forte sur 12 périodes de valeur 4).
 
-Les prévisions par tranche de 5 min sont égalgement disponibles.
+Les prévisions par tranches de 5 mins sont également disponibles.
