@@ -8,7 +8,7 @@ Ce plugin permet de créer des équipements météo de plusieurs types :
 
  * [Crues](crues.md) : information du niveau d'eau des stations disponibles sur vigicrues
 
- * [Marées](maree.md) : information sur les heures de maréé et l'indice
+ * [Marées](maree.md) : information sur les heures de marée et l'indice
 
  * [Prévision Pluie 1H](pluie1h.md) : permet de récupérer les informations sur les prévisions pluies à l'heure qui suit par Météo France
 
@@ -26,7 +26,7 @@ Ce plugin permet de créer des équipements météo de plusieurs types :
 
 > Est-ce que le plugin s'appuie sur des API tiers ?
 
-Oui il utilise des sites pour récupérer ses infos.
+Oui, il utilise des sites pour récupérer ses infos.
 
 ## Changelog
 
