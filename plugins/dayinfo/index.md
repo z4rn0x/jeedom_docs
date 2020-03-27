@@ -73,9 +73,9 @@ Ce plugin permet d'obtenir plusieurs types d'équipements qui apportent leurs co
 
 Le plugin ne comporte pas de configuration générale.
 
-Sur l'équipement il faut configurer le type et la localisation si elle est nécessaire
+Sur l'équipement, il faut configurer le type et la localisation si elle est nécessaire
 
-Pour le calendrier personnalisé, un champ permet de remplir le chemin, ce fichier doit être local au format ics, le calendrier doit contenir des evenements de type "jours entiers" avec un début et une fin. Par exemple un calendrier de congés, vacances scolaires non pris en charge en standard, jours fériés etc
+Pour le calendrier personnalisé, un champ permet de remplir le chemin, ce fichier doit être local au format ics, le calendrier doit contenir des évènements de type "jours entiers" avec un début et une fin. Par exemple un calendrier de congés, vacances scolaires non pris en charge en standard, jours fériés etc
 
 ## FAQ
 

@@ -28,7 +28,7 @@ Pour un équipement de type localisation, deux champs d'option sont disponibles 
 
   - Coordonnées : en saisissant les coordonnées, les informations se mettront à jour (reverse geocoding)
 
-  - Déterminer l'adresse : pour une localisation par coordonnées par défaut il y aura une création de l'adresse. Si on veut l'éviter, il faut décocher cette option (cela est nécessaire pour éviter qu'un point soit rapprocher d'une adresse physique existante)
+  - Déterminer l'adresse : pour une localisation par coordonnées par défaut il y aura une création de l'adresse. Si on veut l'éviter, il faut décocher cette option (cela est nécessaire pour éviter qu'un point soit rapproché d'une adresse physique existante)
 
   - Par une info Jeedom : permet de se mettre à jour par rapport à la valeur provenant d'ailleurs dans Jeedom
 
@@ -59,9 +59,9 @@ Les équipements trajets disposent de 3 options de configuration :
 
 Les options possibles sont :
 
-  - mode : parmis (driving, walking, bicycling, transit), disponible link:https://developers.google.com/maps/documentation/directions/intro#TravelModes[dans l'API google maps]
+  - mode : parmi (driving, walking, bicycling, transit), disponible link:https://developers.google.com/maps/documentation/directions/intro#TravelModes[dans l'API google maps]
 
-  - avoid : parmis (tolls, highways, ferries, indoor), voir link:https://developers.google.com/maps/documentation/directions/intro#Restrictions[les restrictions]
+  - avoid : parmi (tolls, highways, ferries, indoor), voir link:https://developers.google.com/maps/documentation/directions/intro#Restrictions[les restrictions]
 
   - waypoints : liste de points de passage, voir link:https://developers.google.com/maps/documentation/directions/intro#Waypoints[les waypoints]
 
@@ -83,7 +83,7 @@ Ce type d'équipement dispose de 2 options de configuration :
 
   - Options, ce sont les options (non obligatoires) de l'API (voir link:http://doc.navitia.io/#departures[la doc API])
 
-À noter que pour l'heure doit se noter au format classique Jeedom, par exemple 1720 pour 17h20
+À noter que l'heure doit se noter au format classique Jeedom, par exemple 1720 pour 17h20
 
 Les options prennent en compte stop_areas ou stop_points pour "forcer" l'utilisation d'une station.
 
@@ -95,7 +95,7 @@ link:https://api.navitia.io/v1/coverage/sandbox/stop_points/stop_point%3ARAT%3AS
 Il faut indiquer votre clé API dans "token" pour débloquer toutes les zones et avoir l'auto complète.
 Puis :
   - dans coverage votre zone geographique (fr-idf, fr-ne, fr-...)
-  - stop_points le nom de la station recherché (ou stop_areas pour une station avec plusieurs arrêts)
+  - stop_points le nom de la station recherchée (ou stop_areas pour une station avec plusieurs arrêts)
   - dans features LINES ou ROUTES suivant l'info recherchée
 SUBMIT
   -sélectionner la ROUTE/LINE désirée, le code sera indiqué
@@ -110,7 +110,7 @@ Il est possible d'enregistrer un équipement qui corresponde à un Device Apple
 
 > Est-ce que le plugin s'appuie sur des API tiers ?
 
-Oui pour certains équipements (les déplacements, les arrêts de transports et si le calcul des coordonnées est activé).
+Oui, pour certains équipements (les déplacements, les arrêts de transports et si le calcul des coordonnées est activé).
 
 ## Changelog
 

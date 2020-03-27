@@ -2,17 +2,17 @@
 
 ## Présentation
 
-Loxone est un automate pour la maison connectée. Compatible avec le KNX, 1wire mais aussi les DI et DO standards ainsi qu'une multitude d'équiepements accessible par IP.
+Loxone est un automate pour la maison connectée. Compatible avec le KNX, 1wire mais aussi les DI et DO standards ainsi qu'une multitude d'équipements accessibles par IP.
 
 Le plugin Jeedom permet une interconnexion bidirectionnelle pour obtenir le meilleur des deux mondes.
 
 ## Configuration
 
-La configuration générale nécessite de rentrer les variables propre au Miniserver Loxone : IP, utilisateur, mot de passe et port du Virtual Input UDP. On y trouve également l'url HTTP utilisable dans Loxone pour communiquer avec Jeedom.
+La configuration générale nécessite de rentrer les variables propres au Miniserver Loxone : IP, utilisateur, mot de passe et port du Virtual Input UDP. On y trouve également l'url HTTP utilisable dans Loxone pour communiquer avec Jeedom.
 
 Les connexions avec Loxone sont :
 
-  - récupération de l'arbre des composants Loxone sur sauvegarde de la configuration et de facon journalière. Les commandes et équipements correspondant sont créés (uniquement ce que l'utilisateur peut voir). Uniquement les commandes digitales et analogiques sont disponibles.
+  - récupération de l'arbre des composants Loxone sur sauvegarde de la configuration et de façon journalière. Les commandes et équipements correspondants sont créés (uniquement ce que l'utilisateur peut voir). Uniquement les commandes digitales et analogiques sont disponibles.
   
   - les changements d'état sont récupérés par Jeedom en websocket (sous les mêmes conditions que plus haut, être accessibles à l'utilisateur et digital/analogique)
   
@@ -24,7 +24,7 @@ Les connexions avec Loxone sont :
   
 Les commandes envoyées en UDP permettent côté Loxone de créer des commandes facilement à partir du moniteur (https://www.loxone.com/enen/kb/communication-with-udp/)
 
-Pour utiliser les commandes HTTP pour envoyé vers Jeedom depuis Loxone, voir les Virtual Output (https://www.loxone.com/enen/kb/virtual-inputs-outputs/)
+Pour utiliser les commandes HTTP pour envoyer vers Jeedom depuis Loxone, voir les Virtual Output (https://www.loxone.com/enen/kb/virtual-inputs-outputs/)
 
 La référence de l'API Loxone est disponible dans leur documentation (https://www.loxone.com/enen/kb/api/)
 

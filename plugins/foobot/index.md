@@ -4,7 +4,7 @@
 
 Ce plugin permet de récupérer dans Jeedom les données des capteurs Foobot
 
-Sont récuprérer les valeurs :
+Sont récupérées les valeurs :
 
   - Température
 
@@ -30,7 +30,7 @@ Les équipements sont créés automatiquement (un équipement par Foobot)
 
 > Est-ce que le plugin s'appuie sur des API tiers ?
 
-Oui, ce plugin utile l'API Foobot et donc le Cloud, il ne fonctionnera pas sans internet, il n'y a pas de moyen de récupérer les valeurs en local
+Oui, ce plugin utilise l'API Foobot et donc le Cloud. Il ne fonctionnera pas sans internet, il n'y a pas de moyen de récupérer les valeurs en local
 
 ## Changelog
 

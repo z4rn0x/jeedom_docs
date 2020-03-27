@@ -25,13 +25,13 @@ La configuration générale du plugin propose les paramètres :
 
 Toute sauvegarde de la configuration provoque une relance du cron du plugin (et donc un rechargement de la configuration)
 
-Ensuite les équipements se retrouvent dans la section MQTT
+Ensuite, les équipements se retrouvent dans la section MQTT.
 
 Jeedom créera automatiquement toute information publiée sur Mosquitto. Le dernier élément du sujet MQTT est utilisé en tant qu'identifiant d'information. Le reste constitue un équipement.
 
   Exemple : le sujet MQTT sensors/salon2/temp deviendra un équipement sensors/salon2 et temp une information. La valeur lui sera associée.
 
-  Si on publie ensuite sur sensors/salon2/hum l'information sera ajoutée
+  Si on publie ensuite sur sensors/salon2/hum, l'information sera ajoutée.
 
 Si le payload est de type json, alors un équipement prenant le nom du topic et avec une commande info par élément du json sera créée.
 
@@ -43,11 +43,11 @@ Pour publier sur MQTT, il suffit d'ajouter une commande et de saisir le sujet et
 
 >Est-ce que ca rend Jeedom disponible comme broker MQTT ?
 
-Non, Jeedom utilise Mosquitto en tant que broker. Si vous avez donner les droits root à Jeedom, l'installation est faite de Mosquitto et la lib PHP-Mosquitto.
+Non, Jeedom utilise Mosquitto en tant que broker. Si vous avez donné les droits root à Jeedom, l'installation est faite de Mosquitto et la lib PHP-Mosquitto.
 
 >Est-ce que je peux utiliser des ESP8266 flashés avec ESPEasy avec ce plugin MQTT ?
 
-Oui, il faut configurer les ESP pour utiliser un controleur configuré en "OpenHAB" dans ESPeasy. Ainsi il créera des topics par GPIO et valeur en payload
+Oui, il faut configurer les ESP pour utiliser un contrôleur configuré en "OpenHAB" dans ESPeasy. Ainsi, il créera des topics par GPIO et valeur en payload
 
 >Est-ce que je peux interconnecter d'autres systèmes en MQTT ?
 

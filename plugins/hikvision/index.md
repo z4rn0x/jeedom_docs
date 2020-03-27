@@ -39,7 +39,7 @@ Non, le plugin écoute les trames émises par les caméras sur le réseau local 
 
 Les caméras Hikvision qui peuvent émettre des détections vers le centre de surveillance, c'est à peu près la seule définition sans liste exacte.
 
-Toutes les caméras Hikvision ne propose pas tous les types de détection (comme le franchissement de ligne)
+Toutes les caméras Hikvision ne proposent pas tous les types de détection (comme le franchissement de ligne)
 
 Des clones Hikvision implémentent aussi ce protocole (ceux qui ont pour but de s'intégrer complètement dans une solution de surveillance full Hikvision)
 

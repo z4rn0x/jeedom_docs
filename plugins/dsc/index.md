@@ -10,11 +10,11 @@ Il faut fournir plusieurs paramètres :
 
   - l'adresse de la carte Envaslink.
 
-  - le nombre de partition (habituellement 1)
+  - le nombre de partitions (habituellement 1)
 
   - le nombre de zones
 
-Un équipement sera créer pour chaque zone, chaque partition et un pour le panel
+Un équipement sera créé pour chaque zone, chaque partition et un pour le panel
 
 ## Protocole Envaslink
 
@@ -82,7 +82,7 @@ Pour le panel, voici les informations remontées par Envisalink
 |802 |Panel AC Trouble |acpower |1|
 |803 |Panel AC Restored |acpower |0|
 
-Les actions suivantes sont possible également pour le panel
+Les actions suivantes sont possibles également pour le panel
 
 |TPI |Signification |Commande |Valeur|
 |060 |Trigger Panic Alarm |trigger |030|

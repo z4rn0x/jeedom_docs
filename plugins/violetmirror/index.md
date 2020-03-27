@@ -8,7 +8,7 @@ Ce plugin permet d'utiliser des lecteurs RFID Mir:ror de Violet.
 
 Sur la page de configuration, il faut renseigner le port à utiliser (par défaut /dev/hidraw1)
 
-L'équipement sera créer automatiquement avec en commandes :
+L'équipement sera créé automatiquement avec en commandes :
 
   * une position du lecteur (binaire à 1 quand il est face visible, 0 quand retourné)
 
