@@ -1,143 +1,140 @@
 # Changelog
 
-Important : en cas de mise à jour disponible pour laquelle il n'y a pas d'information dans cette section, c'est qu'elle n'intègre aucune nouveauté majeure. Cela peut être un ajout de documentation, une correction de documentation, des traductions ou bien de la correction de bugs mineurs.
+Important : in case you don't see an entry on this page and an update is avalaible on the market, this is some translations or minor fixes
 
-## Version février 2020
+## Version february 2020
 
-Ajout du nouveau bulb couleur Yeelight
+Add new Yeelight bulb
 
-Ajout de l'aspirateur Viomi, Cuiseur de Riz et Moniteur de qualité d'air B1
+Add Viomi vacuum cleaner, Rice cooker and air quality monitor B1
 
-## Version janvier 2020
+## Version january 2020
 
-Ajout d'une nouvelle lampe Yeelight
+Add new Yeelight
 
-Ajout de la méthode de récupération des tokens dans les logs pour les appliances Wifi
+Add token recover in the logs for wifi appliances
 
-## Version décembre 2019
+## Version december 2019
 
-Possibilité d'inverser le sens des moteurs rideaux et stores
+Possibility to reverse curtain motors
 
-Ajout du moteur store (Aqara) et ampoule filament (Yeelight)
+Add curtain motor  (Aqara) and light (Yeelight)
 
-## Version novembre 2019
+## Version november 2019
 
-Ajout du moteur rideau sur batterie (Aqara)
+Add battery curtain motor (Aqara)
 
-## Version octobre 2019
+## Version october 2019
 
-Ajout nouveau modèle plafonnier (le 260)
+Add new ceiling ligt ( 260)
 
-Correction d'un bug ancien qui fait que des matériels pourraient apparaitre en "Ampoule Philips" il faut les recréer
+Bug correction
 
-## Version aout 2019
+## Version august 2019
 
-Ajout du nouveau ventilateur Xiaomi et nouveau plafonnier Yeelight
+Add new fan Xiaomi and new Yeelight ceiling light
 
-Correction de la prise en charge des lampes d'ambiance sur ceiling4 et 10
+Correction of ambiance and ceiling lights management
 
-Correction des équipements blea sélectables
+Correctionof selectables blea equipments
 
-## Version juin 2019
+## Version june 2019
 
-Ajout nouveau modèle Yeelight Meteorite
+Add new Yeelight Meteorite
 
-## Version mai 2019
+## Version may 2019
 
-Ajout nouveau modèle Mijia Bedside 2
+Add mew Mijia Bedside 2
 
-## Version janvier 2019
+## Version January 2019
 
-Ajout nouveau modèle plafonnier Yeelight
+Add new Yeelight ceiling light
 
-## Version novembre 2018
+## Version november 2018
 
-Ajout nouveaux modèles Aqara (vibration, nouvelle version bouton et inter)
+Add new Aqara equipments (vibration, new switch and wall switch)
 
-## Version septembre 2018
+## Version september 2018
 
-Ajout nouveaux modèles Aqara (vibration, nouvelle version bouton et inter)
+Add new Aqara equipments (vibration, new switch and wall switch)
 
-## Version du 30 juillet 2018
+## Version du july  2018
 
-Correction Yeelight dimmable blancs
+Dimmable Yeelight correction
 
-## Version du 25 mai 2018
+## Version 25 may 2018
 
-Ajout de la nouvelle version du Cube Aqara (actuellement le firmware de la gateway ne renvoit pas les infos, uniquement la batterie)
+Add new revision of the Aqara cube (currently the gateway firmware doesn't send back the info, only the battery level)
 
-## Version du 20 mai 2018
+## Version du may 2018
 
-Ajout des nouvelles Yeelight dimmable E27 (les nouvelles color 9W sont prises en charge sur le modèle color existant)
+Add new dimmable Yeelight E27 (new 9W colors are taken into account on the current model)
 
-## Version du 15 mai 2018
+## Version du may 2018
 
-Ajout des modes pour les aspirateurs
+Add modes for vacuum cleaner
 
-## Version du 19 mars 2018
+## Version 19 march 2018
 
-Ajout du nouveau bouton Aqara + variante plafonnier Yeelight
+Add new Aqara switch + new Yeelight ceiling light
 
-## Version du 25 février 2018
+## Version 25 february 2018
 
-Ajout des nouveaux modèles interrupteurs et prises encastrés
+Add more wall switches and plugs
 
-## Version du 30 janvier 2018
+## Version 30 january 2018
 
-Ajout du bouton d'inclusion et exclusion pour les équipements Aqara
+Add inclusion and exclusion button for Aqara equipment
 
-## Version du 15 janvier 2018
+## Version 15 january 2018
 
-Correction d'un bug sur statut ampoule Philips
+Fix bug on status of Philips bulb
 
-Ajout du Purificateur v2 avec écran
+Add new Air Purifier v2 with display
 
-Ajout des plafonniers Yeelight 450, 480, 650
+Add Yeelight Ceiling 450, 480, 650
 
-## Version du 27 décembre 2017
+## Version 27 december 2017
 
-Correction d'un bug sur création équipements
+Fix bug on creating new stuff
 
-Ajout du Purificateur Pro
+Add Air Purifier Pro
 
-## Version du 14 décembre 2017
+## Version 14 december 2017
 
 Refonte de la page équipement qui empêche la création manuelle des équipements Aqara
 
-## Version du 14 décembre 2017
-
 Ajout de la commande Rafraichir sur les équipements aqara (zigbee) qui permet de demander l'état actuel des capteurs
 
-## Version du 21 novembre 2017
+## Version 21 november 2017
 
-Ajout de l'ampoule Philips
+Add Philips bulb
 
-Ajout de la lampe de chevet Yeelight Wifi
+Add Yeelight Wifi Bedlamp
 
-## Version du 15 novembre 2017
+## Version 15 november 2017
 
-Modification de la documentation
+Modification of documentation format
 
-## Version du 07 octobre 2017
+## Version 07 october 2017
 
-Design page des équipements
+Design equipement page
 
 Ajout visibilité des équipements BLEA Xiaomi depuis la page équipement
 
-## Version du 30 septembre 2017
+## Version 30 september 2017
 
 Ajout de la prise murale Zigbee
 
-## Version du 25 septembre 2017
+## Version 25 september 2017
 
 Ajout de matériels :
 
-* capteur d'eau
+capteur d'eau
 
-* interrupteurs encastrés avec neutre (simple ou double)
+interrupteurs encastrés avec neutre (simple ou double)
 
-* lampe Philips plafonnier
-
+lampe Philips plafonnier
 
 Ajout d'un regroupement des capteurs Aqara par gateway
 
@@ -145,14 +142,14 @@ Ajout de l'information si l'équipement est offline sur la page globalement équ
 
 Ajout d'informations sur un équipement Wifi :
 
-* temps sur la prise
+temps sur la prise
 
-* puissance et temps sur la multiprise
+puissance et temps sur la multiprise
 
-## Version du 20 avril 2017
+## Version 20 april 2017
 
-Refonte du démon en python
+Rewrite python daemon
 
-Utilisation du démon pour le statut et commandes Yeelight
+Use the daemon for commands and status on Yeelight
 
-Ajout de nouveaux périphériques Wifi Xiaomi
+Add new Wifi Xiaomi devices
