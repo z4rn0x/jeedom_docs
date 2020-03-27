@@ -1,0 +1,53 @@
+# DarkSky, full weather forecast
+
+## Introduction
+
+This plugin allows you to get the weather from the DarkSKy.net site which has "real time" data
+
+A presentation is available on this article (in French) : [Article de présentation](https://lunarok-domotique.com/plugins-jeedom/dark-sky-meteo-panel/)
+
+The plugin has different refresh rates:
+
+  - every 5 mins: real-time information
+
+  - hourly: hourly forecast
+
+  - daily: daily forecasts (weather, and sunrise and sunset times)
+
+When Jeedom restarts, all the info is retrieved.
+
+
+## Configuration
+
+The plugin does not have a general configuration.
+
+It is necessary to add an equipment and configure the 2 parameters:
+
+  - which localization equipment (Jeedom or geotrav configuration) will be used for the coordinates of the weather forecast to retrieve
+
+  - the API key of Dark Sky (https://darksky.net/dev/)
+
+
+## FAQ
+
+> Does the plugin rely on third-party APIs?
+
+Yes, the plugin retrieves the values of Dark Sky
+
+> Does the plugin rely on third party plugins?
+
+Yes, it uses equipment from the geotrav plugin (Location and Route).
+
+> How to use the sunrise / sunset information?
+
+A scenario must be used with the sunrise or sunset time as the trigger. Then use blocks on condition 'A'
+
+## Troubleshooting
+
+> I have no information
+
+It is mandatory to create equipment and fill in the information of the place for which we want to have the weather.
+
+## Changelog
+
+[See dedicated link, in French](changelog.md).
