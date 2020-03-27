@@ -1,75 +1,87 @@
 # Xiaomi Home
 
-## Presentation
+## Introduction
 
-A complete presentation of the plugin is avalaible on this article : [Article de présentation, in french](https://lunarok-domotique.com/plugins-jeedom/xiaomi-home/).
+A full presentation of the plugin is available on this article : [Article de présentation, in french](https://lunarok-domotique.com/plugins-jeedom/xiaomi-home/).
 
-The plugin allows Jeedom to integrate 3 protocols used by Xiaomi devices :
+The plugin implements 3 Xiaomi protocols, which gives a substantial range of supported hardware:
 
-### **Zigbee protocol with Xiaomi Aqara**
-La Xiaomi Aqara Home Gateway (aussi appelée **passerelle Xiaomi**) permet d'utiliser différents capteurs Zigbee de Xiaomi. [See doc Aqara](aqara.md).
+### **The Xiaomi Aqara zigbee protocol**
+The Xiaomi Mi Home Gateway (also called Xiaomi gateway) allows you to use different Zigbee sensors from Xiaomi. See doc Aqara. [See doc Aqara](aqara.md).
+Please note, the Aqara Homekit gateway is different and does not have the API allowing connection to home automation. In addition, this new gateway only allows the use of new sensors, usually stamped "Aqara" (square / rectangular shapes)
 
 ### **Lights Yeelight**
 
-Les lampes qui supportent le protocole Yeelight Wifi. [See doc Yeelight](yeelight.md).
+Lamps that support the Yeelight Wifi protocol. See the Yeelight doc. [See doc Yeelight](yeelight.md).
 
 ### **Wifi Appliances**
 
-Il existe aussi un protocole Xiaomi commun à beaucoup de périphériques Wifi. Ce protocole est implémenté dans le plugin et rend compatibles les appliances l'utilisant. [See doc Wifi Appliances](wifi.md).
+There is also a Xiaomi protocol common to many WiFi devices. This protocol is implemented in the plugin and makes compatible the appliances using it. See the Wifi Appliances doc. [See doc Wifi Appliances](wifi.md).
 
-> Et les périphériques Bluetooth ?
+> What about Bluetooth devices?
 >
-> Les produits Xiaomi Bluetooth ne sont pas pris en charge par ce plugin. Néanmoins, le plugin **BLEA** (Bluetooth Advertisement) disponible sur le market de Jeedom, en gère une bonne partie, dont :
+> Xiaomi Bluetooth products are not supported by this plugin. However, the BLEA (Bluetooth Advertisement) plugin available on the Jeedom market manages a good part of it, including:
 >
-> * bracelets Miband (au moins pour la présence sur le 2),
-> * lampe de chevet (1ère génération, base grise),
-> * balance (1ère génération avec le poids seulement).
+> * Miband bracelets (at least for the presence on the 2),
+> * bedside lamp (1st generation, gray base),
+> * balance (1st generation with weight only).
 
 ## FAQ
 
->Quel type de gateway Xiaomi est supportée ?
+> What type of Xiaomi gateway is supported?
 
-La "Aqara" avec anneau led pour le Zigbee. Il faut bien la paramétrer en **mode développeur** pour y accéder localement. Pour cela, il faut un firmware au moins en **1.4** .
+The "Aqara" with led ring for the Zigbee. It must be set in developer mode to access it locally. For this, you need firmware at least 1.4.
 
->Je n'arrive pas à passer ma gateway Aqara en mode local ?
+> I can't switch my Aqara gateway to local mode?
 
-Il faut également bien utiliser l'application sur smartphone **Mi Home** en **anglais** et réglée sur **China Mainland** si on rencontre des problèmes d'inclusion.
+You must also use the Mi Home smartphone app in English and set to China Mainland if you encounter inclusion problems.
 
->Une information de mes capteurs ne remonte pas ?
+> Information from my sensors does not go up?
 
-Si vous n'avez pas de commande équivalente créée dans Jeedom, l'API n'expose peut-être pas cette information. Il faut attendre peut être une mise à jour du firmware.
-Toute les informations ne remontent pas à la même fréquence, par exemple la batterie peut n'être envoyée que quotidiennement.
+If you do not have an equivalent order created in Jeedom, the API may not expose this information. You may have to wait for a firmware update. All the information does not go back to the same frequency, for example the battery can be sent only daily.
 
->Je n'arrive pas à contrôler mes capteurs Aqara (couleur et son gateway, prise ...) ?
+> I can't control my Aqara sensors (color and its gateway, socket ...)?
 
-Vous devez bien saisir la **clé** de la gateway, visible dans Mi Home, sur l'équipement gateway dans Jeedom.
+You must enter the gateway key, visible in Mi Home, on the gateway equipment in Jeedom.
 
->Mes commandes sur capteurs Aqara qui fonctionnaient auparavant, ne fonctionnent plus ?
+> My orders on Aqara sensors which worked before, do not work any more?
 
-Vérifiez si la clé a changé dans Mi Home, cela peut se produire après une mise à jour du firmware par exemple.
+Check if the key has changed in Mi Home, this can happen after a firmware update for example.
 
->Jeedom ne parvient pas à découvrir la gateway et les capteurs ?
+> Jeedom can't find the gateway and the sensors?
 
-Vérifiez que votre routeur laisse bien passer les paquets broadcast du réseau Wifi vers l'ethernet par exemple.
+Check that your router allows broadcast packets from the Wifi network to pass through Ethernet, for example.
 
->Combien de capteurs au maximum peut-il y avoir sur une Gateway Aqara ?
+> My Jeedom is installed on Docker and does not see the gateway?
 
-Les remontées utilisateurs indiquent **31 capteurs + la Gateway**. Au delà il faut supprimer l'appairage d'un capteur pour en remettre un. Le plugin supporte plusieurs Gateways.
+The gateway communicates in broadcast, so you must be on the same network (host mode) and make sure that the Broadcast packets are received on Jeedom.
 
->Quelles ampoules sont supportées par ce plugin ?
+> Jeedom does not see the new Gateway stamped "Aqara Homekit"?
 
-Les **Yeelight Wifi** uniquement (la liste est fournie dans la [documentation](yeelight.md)).
+It does not offer the Aqara API, it does not work with the plugin, you have to take the model presented in the doc. In addition, the Homekit gateway is not compatible with all of the Xiaomi sensor models.
 
->Certaines ampoules Yeelight ne remontent pas dans Jeedom ?
+> Jeedom can't see my gateway?
 
-Les ampoules Yeelight Wifi doivent toutes être paramétrées avec le mode **développeur** pour être joignables sur le réseau local.
-Pour ceci, il vous faut installer l'application Yeelight (et non pas seulement Mi Home), renseigner votre identifiant/mot de passe, aller dans chaque équipement, accéder aux paramètres via les ' ... ' et activer le 'Developer Mode'.
-Note : Il n'est pas nécessaire de changer la langue de l'application.
+She must go back alone in Jeedom. If it is not the case, it is possible to check if it is correctly parameterized with the command:
 
->Je n'arrive pas à contrôler une appliance, comme le robot, par exemple ?
+nmap -p 9898 -sU ip.ga.te.way
 
-Vérifiez que vous avez bien obtenu le **token**, pour les appliances qui ne le fournissent pas, des tutos sont présents dans la [doc](wifi.md).
+> How many sensors can there be on a Gateway Aqara?
+
+User feedback indicates 31 sensors + the Gateway. Beyond that, you must remove the pairing of a sensor to replace one. The plugin supports several Gateways.
+
+> What bulbs are supported by this plugin?
+
+Yeelight Wifi only (the list is provided in the documentation).
+
+> Some Yeelight bulbs do not go up in Jeedom?
+
+The Yeelight Wifi bulbs must all be configured with the developer mode to be reachable on the local network. For this, you need to install the Yeelight application (and not just Mi Home), enter your username / password, go to each device, access the parameters via the '...' and activate the 'Developer Mode' . Note: It is not necessary to change the language of the application.
+
+> I can't control an appliance, like the robot, for example?
+
+Check that you have obtained the token, for the appliances which do not provide it, tutorials are present in the doc (wifi.md).
 
 ## Changelog
 
-[Voir la page dédiée](changelog.md).
+[See dedicated link](changelog-en_US.md).
