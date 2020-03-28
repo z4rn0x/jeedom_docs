@@ -8,7 +8,7 @@ Ce plugin permet d'obtenir la liste des derniers épisodes Sickbeard et les proc
 
 Le plugin ne comporte pas de configuration générale.
 
-Il faut entrer l'adresse de Sickbeard sur la page d'équipement ainsi que choisir l'adresse la commande de lecture.
+Il faut entrer l'adresse de Sickbeard sur la page d'équipement ainsi que choisir l'adresse de la commande de lecture.
 
 ## FAQ
 
