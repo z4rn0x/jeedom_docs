@@ -8,7 +8,7 @@ On trouve plusieurs modèles sur Amazon à partir de 100€.
 
 ### Exemple de stations fonctionnelles
 
-Les stations météo qui utilisent WS View se trouvent sous plusieurs noms de marque, plusieurs variante mais reste le même modèle. Voici une liste qui devrait fonctionner.
+Les stations météo qui utilisent WS View se trouvent sous plusieurs noms de marques différentes, plusieurs variantes mais restent le même modèle. Voici une liste qui devrait fonctionner.
 
 [Waldbeck Halley Station météo Multifonction](https://amzn.to/3924BKr)
 
@@ -42,7 +42,7 @@ Les paramètres à saisir :
 
 ## Informations fournies
 
-Voici les informations disponible :
+Voici les informations disponibles :
 
 * Humidité Extérieure
 
@@ -84,7 +84,7 @@ Voici les informations disponible :
 
 * Pression Absolue (quand disponible)
 
-* Tendance (par calcul basé sur la la pression actuelle)
+* Tendance (par calcul basé sur la pression actuelle)
 
 * Projection (par calcul basé sur les 4 dernières heures de pression)
 
