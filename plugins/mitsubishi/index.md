@@ -12,7 +12,7 @@ Tous les équipements du compte MelCloud sont automatiquement créés
 
 Le plugin nécessite le compte mail et mot de passe du compte MelCloud.
 
-Une fois saisie, le plugin va récupérer les équipements présents sur l'API et les créer dans Jeedom.
+Une fois saisis, le plugin va récupérer les équipements présents sur l'API et les créer dans Jeedom.
 
 Suivant si c'est une PAC ou une clim (non testée chez moi), il va créer les commandes infos et actions.
 
@@ -40,9 +40,9 @@ Pour une PAC (4 équipements sont créés : la PAC, le module ECS, le module Zon
 
  - forcer le mode chauffe de l'eau (sur le module ECS)
 
- - eteindre le mode forcé du chauffage de l'eau (sur le module ECS)
+ - éteindre le mode forcé du chauffage de l'eau (sur le module ECS)
 
- - allumer/eteindre/statut de la PAC (sur le modulee PAC)
+ - allumer/éteindre/statut de la PAC (sur le modulee PAC)
 
  - statut online  (sur le modulee PAC)
 
@@ -58,7 +58,7 @@ Pour une climatisation :
 
  - la consigne ventilation
 
- - allumer/eteindre/statut de la PAC
+ - allumer/éteindre/statut de la PAC
 
 ## FAQ
 
