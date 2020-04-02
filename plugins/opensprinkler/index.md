@@ -10,19 +10,19 @@ Il permet de récupérer les informations à disposition du OS mais également d
 
 ### Configuration du plugin
 
-Dans la configuration du plugin il faut renseigner :
+Dans la configuration du plugin, il faut renseigner :
 
   * l'adresse de l'OpenSprinkler (sous la forme ip:port)
 
   * le mot de passe à utiliser
 
-Les informations sur le firmware et matériel sont disponibles sur la page de configuration après avoir rentrer les renseignements
+Les informations sur le firmware et matériel sont disponibles sur la page de configuration après avoir rentré les renseignements
 
 ### Equipement pour le controleur
 
-Le controleur est créé dans Jeedom avec les commandes suivantes :
+Le contrôleur est créé dans Jeedom avec les commandes suivantes :
 
-  * Etat du controleur (binaire) qui indique si il est actif
+  * Etat du contrôleur (binaire) qui indique si il est actif
 
   * Les actions d'activation et désactivation
 
@@ -44,23 +44,23 @@ Pour chaque station, un équipement est créé avec les commandes suivantes :
 
   * Station activée (binaire) qui indique si elle est active (ne pas confondre avec le statut)
 
-  * Les actions d'activation/désaction
+  * Les actions d'activation/désactivation
 
   * Ignore la pluie (binaire) qui indique que la station ne tiendra pas compte du statut de pluie
 
-  * Les actions d'activation/désaction
+  * Les actions d'activation/désactivation
 
   * Mode séquentiel (binaire)
 
-  * Les actions d'activation/désaction
+  * Les actions d'activation/désactivation
 
   * Connexion à Master 1 (binaire)
 
-  * Les actions d'activation/désaction
+  * Les actions d'activation/désactivation
 
   * Connexion à Master 2 (binaire)
 
-  * Les actions d'activation/désaction
+  * Les actions d'activation/désactivation
 
 ## FAQ
 
