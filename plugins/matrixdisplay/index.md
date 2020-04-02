@@ -26,7 +26,7 @@ Pour le Notif'Heure, en cas de présence du DHT22, les commandes infos températ
 
 Le plugin ne comporte pas de configuration générale.
 
-Sur chaque équipement il faut configurer :
+Sur chaque équipement, il faut configurer :
 
   - l'adresse IP (avec le port pour Awtrix 2)
 
@@ -36,7 +36,7 @@ Sur chaque équipement il faut configurer :
 
   - les paramètres par défaut de luminosité, effet, flash, texte avant notif pour le Notif'Heure
 
-  - si l'on déssire activer la gestion locale avec le message à afficher
+  - si l'on désire activer la gestion locale avec le message à afficher
 
 Le champ "Message à afficher" prend les fonctions et les commandes informations en arguments, comme dans un scénario. Ce qui permet de rendre le texte dynamique. Il est rafraichi toutes les minutes.
 
