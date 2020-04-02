@@ -18,7 +18,7 @@ Le plugin ne comporte pas de configuration générale.
 
 Il faut ajouter un équipement par "unité" à superviser (comprendre pi, serveur ...).
 
-Pour superviser un équipement distant il faut remplir les options de l'équipement suivantes (uniquement les distants) :
+Pour superviser un équipement distant, il faut remplir les options de l'équipement suivantes (uniquement les distants) :
 
 * Adresse IP
 
@@ -28,11 +28,11 @@ Pour superviser un équipement distant il faut remplir les options de l'équipem
 
 * Emplacement de la clef privée (sont uniquement supportées les connexions par clef SSH)
 
-* Chemin des checks Nagios sur la cible (en local ils sont intégrés)
+* Chemin des checks Nagios sur la cible (en local, ils sont intégrés)
 
 ##### Configuration commandes
 
-Ensuite on ajoute une commande par élément à superviser (état RAID, mysql, logs ...) qui correspondra chacune à une commande à lancer (un check_***).
+Ensuite, on ajoute une commande par élément à superviser (état RAID, mysql, logs ...) qui correspondra chacune à une commande à lancer (un check_***).
 
 Chaque commande permet de paramétrer sa fréquence (5mn, 15mn ou 30mn).
 
@@ -42,9 +42,9 @@ On peut également exécuter le check "Avec Sudo".
 
 On peut également sélectionner la création automatique de commandes liées qui donnent le retour d'affichage, le résultat et les métriques.
 
-Dans la case "Check" on saisit le nom du check à lancer.
+Dans la case "Check", on saisit le nom du check à lancer.
 
-Dans la case "Options" on saisit les options de ce check (voir [les exemples](exemples.md)).
+Dans la case "Options", on saisit les options de ce check (voir [les exemples](exemples.md)).
 
 #### Résultat de commande dans un scénario
 
