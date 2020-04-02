@@ -12,11 +12,11 @@ C'est cette dernière qui est utilisée par Jeedom et permettre ainsi de piloter
 
 La connexion Ethernet ne servira que pour l'API, la configuration se fait via le Wifi de la gateway.
 
-Pendant les 20mn après branchement, le KLF200 fournit un réseau Wifi sur lequel on peut se connecter et qui permet de faire les ajouts de devices et autres
+Pendant les 20 mns après branchement, le KLF200 fournit un réseau Wifi sur lequel on peut se connecter et qui permet de faire les ajouts de devices et autres
 
-Pour se connecter au Wifi, vous reconnaitres le nom par "KL200_***" et le mot de passe à utiliser est sur le boitier (on en aura besoin aussi pour Jeedom)
+Pour se connecter au Wifi, vous reconnaitrez le nom par "KL200_***" et le mot de passe à utiliser est sur le boitier (on en aura besoin aussi pour Jeedom)
 
-Ensuite, rendez vous sur velux.info avec le compte admin et en mot de passe velux123. Vous pouvez alors ajouter les devices par le moyen supporté qui correspond à votre cas (le plus simple étant la recopie d'une télécommande tactil KLR 200)
+Ensuite, rendez vous sur velux.info avec le compte admin et en mot de passe velux123. Vous pouvez alors ajouter les devices par le moyen supporté qui correspond à votre cas (le plus simple étant la recopie d'une télécommande tactile KLR 200)
 
 Faites attention de bien nommer vos devices sans espace, c'est impératif pour le plugin Jeedom
 
@@ -28,7 +28,7 @@ Le plugin nécessite deux paramètres à saisir sur la page de configuration du 
   
   * le mot de passe du KLF200 (celui utilisé pour le Wifi)
   
-Ensuite un bouton scan est disponible, il créera chaque équipement trouvés sur le KLF200 + un équipement global "Window" si au moins une a été trouvé (pareil pour les stores)
+Ensuite, un bouton scan est disponible : il créera chaque équipement trouvé sur le KLF200 + un équipement global "Window" si au moins une a été trouvée (pareil pour les stores)
 
 ### Configuration des équipements
 
@@ -41,7 +41,7 @@ Chaque équipement est créé automatiquement, il affiche son ID, nom et type su
 - Définir ouverture (slider en %)
 - Refresh
 
-Les équipements ont les types génériques de type volets roulants définis par défaut pour permettre des les remonter dans Google Smart Home par exemple
+Les équipements ont les types génériques de type volets roulants définis par défaut pour permettre de les remonter dans Google Smart Home par exemple
 
 ## FAQ
 
