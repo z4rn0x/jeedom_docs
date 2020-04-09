@@ -15,6 +15,7 @@ Le plugin nécessite de saisir 3 paramètres :
 * Adresse IP du routeur
 * Utilisateur SSH (normalement admin)
 * Mot de passe (le même que via la conf par page web)
+* (Facultatif) Liste des AP en AIMesh, ca doit être les IP séparées par un ;
 
 Il faut bien activer l'accès au SSH par l'adresse locale.
 
