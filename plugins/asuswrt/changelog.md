@@ -6,6 +6,8 @@ Important : en cas de mise à jour disponible pour laquelle il n'y a pas d'infor
 
 Ajout des AP AImesh
 
+Possibilité de lire les hostnames des devices en IP fixe
+
 ## Février 2020
 
 Ajout des informations sur le statut des clients VPN, connexions WAN, liens ethernet
