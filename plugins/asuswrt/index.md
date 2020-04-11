@@ -47,6 +47,10 @@ L'équipement dispose de plusieurs commandes :
 
 Le plugin utilise une connexion SSH locale pour récupérer ses informations.
 
+> J'ai des équipements sur mon réseau en IP fixe, le hostname n'est pas vu par le plugin/routeur, comment faire ?
+
+Il faut remplir le fichier /jffs/configs/dnsmasq.conf.add sur votre routeur.
+
 ## Changelog
 
 [Voir la page dédiée](changelog.md).
