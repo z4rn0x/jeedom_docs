@@ -1,7 +1,7 @@
 # Changelog
 
-Important : en cas de mise à jour disponible pour laquelle il n'y a pas d'information dans cette section, c'est qu'elle n'intègre aucune nouveauté majeure. Cela peut être un ajout de documentation, une correction de documentation, des traductions ou bien de la correction de bugs mineurs.
+Important: if there is an update available for which there is no information in this section, it means that it does not include any major new features. This can be adding documentation, correcting documentation, translating or correcting minor bugs.
 
-## Mars 2018
+## March 2018
 
-Refonte de la doc
+Revision of the documentation
