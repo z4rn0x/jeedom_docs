@@ -1,91 +1,91 @@
-# Onduleurs APC
+# APC inverters
 
-## Présentation
+## Presentation
 
-Ce plugin permet de récupérer les informations d'onduleurs APC et également d'être averti sur leurs évènements.
+This plugin makes it possible to recover information from APC inverters and also to be warned about their events.
 
-Il utilise apcupsd en dépendance (installé pendant l'activation du plugin) et permet de gérer un onduleur APC en USB ou distant.
+It uses apcupsd as a dependency (installed during activation of the plugin) and allows you to manage an APC inverter via USB or remote.
 
-Les informations fournies sont :
+The information provided is:
 
-* Charge : le % de charge de l'onduleur par rapport à sa puissance
-* Batterie : le % de charge de la batterie de l'onduleur
-* Courant Entrant : la tension du courant d'alimentation de l'onduleur
-* Modèle : le modèle d'onduleur
-* Statut : le statut de l'onduleur
-* Temps sur batterie : la durée d'autonomie disponible
-* Voltage pile : tension de la pile
-* Evènement : tout évènement détecté par le service apcupsd qui est transmis en push à Jeedom
+* Load: the% load of the inverter relative to its power
+* Battery: the% charge of the UPS battery
+* Incoming Current: the supply current voltage of the inverter
+* Model: the inverter model
+* Status: the status of the inverter
+* Time on battery: the available autonomy time
+* Battery voltage: battery voltage
+* Event: any event detected by the apcupsd service which is transmitted by push to Jeedom
 
 ## Configuration
 
-### Configuration générale
+### General configuration
 
-Le plugin ne comporte pas de configuration générale.
+The plugin does not have a general configuration.
 
-A noter que lorsque le plugin est activé, il effectue deux actions :
+Note that when the plugin is activated, it performs two actions:
 
-* Installation et configuration de apcupsd pour gérer un onduleur USB
-* Création d'un équipement pour déclarer l'onduleur USB créé
+* Installation and configuration of apcupsd to manage a USB inverter
+* Creation of equipment to declare the USB inverter created
 
-### Configuration d'un équipement
+### Equipment configuration
 
-Comme indiqué plus haut, un premier équipement est créé à l'activation. Il est fonctionnel pour un onduleur USB local.
+As indicated above, a first device is created upon activation. It is functional for a local USB inverter.
 
-Vous pouvez ajouter d'autres équipements si vous disposez d'autres onduleurs sur le réseau par exemple.
+You can add other equipment if you have other inverters on the network for example.
 
-Le plugin se trouve dans la catégorie Monitoring.
+The plugin can be found in the Monitoring category.
 
-### Paramètres
+### Settings
 
-L'équipement dispose de 3 paramètres :
+The equipment has 3 parameters:
 
-* Adresse : l'adresse de connexion pour obtenir les informations APC (127.0.0.1 par défaut)
-* Port : le port d'écoute du service apcupsd (par défaut 3551)
-* Puissance : la puissance de l'onduleur (nécessaire pour avoir accès à la consommation)
+* Address: the connection address for obtaining APC information (127.0.0.1 by default)
+* Port: the listening port of the apcupsd service (by default 3551)
+* Power: the power of the inverter (necessary to gain access to consumption)
 
-Attention : il faut bien saisir une adresse ip et pas un nom pour l'adresse, celle ci est utilisée pour identifier qui émet un event en push
+Attention: you must enter an ip address and not a name for the address, it is used to identify who is issuing a push event
 
-Pour la puissance, elle est facilement identifiable dans le nom du modèle (Back-Up 550 USB par exemple, 550 est la puissance)
+For power, it is easily identified in the model name (Back-Up 550 USB for example, 550 is power)
 
-### Utilisation
+### Use
 
-L'équipement dispose d'un widget associé pour le tableau de bord.
+The equipment has an associated widget for the dashboard.
 
-La consommation est disponible pour être intégrée dans le plugin Energie par exemple via un calcul entre la charge et la puissance de l'onduleur.
+Consumption is available to be integrated into the Energy plugin, for example via a calculation between the load and the power of the inverter.
 
-L'information event sera utile pour déclencher des scénarios, ainsi que le statut.
+The event information will be useful for triggering scenarios, as well as the status.
 
-La durée de batterie peut être un bon complément dans les scénarios déclenchés sur statut par exemple.
+Battery life can be a good addition in scenarios triggered on status for example.
 
-### Configuration d'un onduleur accessible via le réseau
+### Configuration of an inverter accessible via the network
 
-#### Installation d'apcupsd
+#### Installation of apcupsd
 
-Apcupsd doit être installé bien sûr, c'est lui qui sera interrogé
+Apcupsd must be installed of course, it will be he who will be questioned
 
-Il faut donc l'installer via la méthode appropriée sur votre système
+It must therefore be installed via the appropriate method on your system
 
-#### Configuration de l'adresse d'écoute
+#### Listening address configuration
 
-Dans le fichier /etc/apcupsd/apcupsd.conf, vous devez vérifier le paramètre NISIP afin que ce soit bien l'adresse de la machine sur le réseau et pas 127.0.0.1 (qui serait non interrogeable)
+In the file /etc/apcupsd/apcupsd.conf, you must check the NISIP parameter so that it is the address of the machine on the network and not 127.0.0.1 (which would not be searchable)
 
 NISIP 192.168.0.100
 
-####  Modification d'apccontrol pour activer le push
+#### Modification of apccontrol to activate the push
 
-Dans le fichier /etc/apcupsd/apccontrol, vous devez ajouter en début une ligne pour appeler Jeedom sur les évènements.
+In the / etc / apcupsd / apccontrol file, you must add at the beginning a line to call Jeedom on events.
 
-Copier celle qui est présente sur Jeedom
+Copy the one that is present on Jeedom
 
-#### Configuration dans Jeedom
+#### Configuration in Jeedom
 
-Maintenant, il n'y a plus qu'à ajouter un équipement et renseigner l'adresse que vous avez remplie dans la configuration
+Now, all you have to do is add a device and enter the address you filled in the configuration
 
-### Evènements fournis par apcupsd
+### Events provided by apcupsd
 
 
-Voici la liste des évènements que peut envoyer apcupsd
+Here is the list of events that apcupsd can send
 
 * annoyme : When a shutdown is scheduled, and the time specified on the ANNOYME directive in the apcupsd.conf file expires, this event is generated.
 
@@ -129,16 +129,16 @@ Voici la liste des évènements que peut envoyer apcupsd
 
 ## FAQ
 
-> Est-ce que le plugin s'appuie sur des API tiers ?
+> Does the plugin rely on third-party APIs?
 
-Le plugin utilise apcupsd pour récupérer ses informations.
+The plugin uses apcupsd to retrieve its information.
 
 ## Troubleshooting
 
-> Je n'ai pas d'informations qui remontent
+> I have no information going back
 
-Il faut bien créer un équipement et remplir les informations.
+Equipment must be created and the information filled in.
 
 ## Changelog
 
-[Voir la page dédiée](changelog.md).
+[See dedicated page](changelog.md).
