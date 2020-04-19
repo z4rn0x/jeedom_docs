@@ -1,45 +1,45 @@
 # Yeelight Wifi
 
-## Configuration des lampes
+## Lamp configuration
 
-Une présentation complète de la gamme est disponible ici : [Article de présentation](https://lunarok-domotique.com/plugins-jeedom/xiaomi-home-jeedom/yeelight-xiaomi-wifi-lamp/).
+A full presentation of the range is available here: [Presentation article in French] (https://lunarok-domotique.com/plugins-jeedom/xiaomi-home-jeedom/yeelight-xiaomi-wifi-lamp/).
 
-Dans l'application Yeelight, vous devez activer l'**option de contrôle** sur réseau local. C'est un switch à activer dans les options de chaque ampoule/bandeau. Par ailleurs, il faut que les équipements soient sur le même réseau que Jeedom.
+In the Yeelight application, you must activate the ** control option ** on the local network. You have to activate this switch in the options of each bulb / strip. In addition, the equipment must be on the same network as Jeedom.
 
-## Création des équipements
+## Creation of equipment
 
-Un bouton de **scan** permet de créer automatiquement tous les équipements répondant au protocole Yeelight disponibles sur le réseau (uniquement ceux qui n'existent pas déjà dans Jeedom, bien sûr).
+A ** scan ** button allows you to automatically create all the equipment corresponding to the Yeelight protocol available on the network (only those that do not already exist in Jeedom, of course).
 
-## Commandes des équipements compatibles
+## Commands for compatible equipment
 
-Les lampes compatibles proposent les commandes suivantes par défaut : **Allumer**, **Eteindre**, **toggle**, **luminosité**, **enchainement**.
+Compatible lamps offer the following commands by default: ** Switch on **, ** Switch off **, ** toggle **, ** brightness **, ** sequence **.
 
-Certaines lampes ajoutent des commandes :
+Some lamps have more commands:
 
-* **Yeelight Blanc** : pas d'autres commandes.
-* **Desklamp** : température de blanc.
-* **Yeelight RGB** : Online, Statut, Définir couleur RGB, Lumière de lune, Lumière de Soleil, Extinction programmée, Stop Enchainement, Information de luminosité, Température de blanc, Information de température de blanc, Mode, Définir couleur HSV, Couleur HSV, Définir saturation HSV, Saturation HSV, Couleur RGB, Rafraichir.
-* **Bandeau RGB** : Online, Rafraichir, Statut, Définir couleur RGB, Lumière de lune, Lumière de Soleil, Extinction programmée, Température de blanc, Stop Enchainement, Information de luminosité, Mode, Définir couleur HSV, Couleur HSV, Définir saturation HSV, Saturation HSV, Couleur RGB.
-* **Lampe de Chevet** (socle doré) : couleur RGB, température de blanc, mode jour, mode nuit, couleurs HSV.
-* **Yeelight Ceiling** : température de blanc, mode jour, mode nuit.
-* **Yeelight Ceiling 450 et 480** : température de blanc, mode jour, mode nuit.
-* **Yeelight Ceiling 650** : température de blanc, mode jour, mode nuit, couleurs RGB.
+* ** Yeelight White **: no other orders.
+* ** Desklamp **: white temperature.
+* ** Yeelight RGB **: Online, Status, Define RGB color, Moonlight, Sunlight, Programmed switch-off, Chain stop, Brightness information, White temperature, White temperature information, Mode, Define HSV color, HSV Color, Define HSV Saturation, HSV Saturation, RGB Color, Refresh.
+* ** RGB banner **: Online, Refresh, Status, Define RGB color, Moonlight, Sunlight, Programmed extinction, White temperature, Stop chaining, Brightness information, Mode, Define HSV color, HSV color, Define HSV saturation, HSV saturation, RGB color.
+* ** Bedside lamp ** (golden base): RGB color, white temperature, day mode, night mode, HSV colors.
+* ** Yeelight Ceiling **: white temperature, day mode, night mode.
+* ** Yeelight Ceiling 450 and 480 **: white temperature, day mode, night mode.
+* ** Yeelight Ceiling 650 **: white temperature, day mode, night mode, RGB colors.
 
-### La commande enchainement
+### The sequence command
 
-Une commande spéciale **enchainement** est créée. Elle a vocation à être utilisée dans un scénario uniquement, car on doit envoyer un contenu précis à la commande.
-Voici un exemple commenté de cette commande :
+A special order ** sequence ** is created. It is intended to be used in a scenario only, because we must send specific content to the order.
+Here is a commented example of this command:
 
-> **`3 recover rgb,255,0,0,500,100-wait,400-rgb,255,255,0,500,100`**
+> ** `3 recover rgb, 255,0,0,500,100-wait, 400-rgb, 255,255,0,500,100` **
 
-* **`3`** : Définit le nombre de fois que la suite d'effets doit être appliquée avant de s'arrêter (0 veut dire illimité).
-* **`recover`** : une des 3 options possibles pour la fin de l'enchaînement (`recover` = revient à l'état précédant l'enchaînement, `off` = s'éteint, `stay` = reste au statut de la fin de l'enchaînement)
-* le troisième élément est la suite des états avec leur transition, il y en a 4 possibles (attention : il ne faut pas mettre d'espace) :
-  * **`hsv`** : paramètres (hue,saturation,duration=300,brightness=100).
-  * **`rgb`** : paramètres (red,green,blue,duration=300,brightness=100).
-  * **`temp`** : paramètres (degrees,duration=300,brightness=100).
-  * **`wait`** : paramètre (duration=300).
+* ** `3` **: Defines the number of times that the sequence of effects must be applied before stopping (0 means unlimited).
+* ** `recover` **: one of the 3 possible options for the end of the chain (` recover` = returns to the state preceding the chain, `off` = goes out,` stay` = stays at status of the end of the sequence)
+* the third element is the continuation of the states with their transition, there are 4 possible (attention: it is not necessary to put space):
+  * ** `hsv` **: parameters (hue, saturation, duration = 300, brightness = 100).
+  * ** `rgb` **: parameters (red, green, blue, duration = 300, brightness = 100).
+  * ** `temp` **: parameters (degrees, duration = 300, brightness = 100).
+  * ** `wait` **: parameter (duration = 300).
 
-Les nombres donnés pour **duration** ou **brightness** sont les maximums autorisés.
+The numbers given for ** duration ** or ** brightness ** are the maximum allowed.
 
-Il faut bien entrer l'enchainement avec des `-` entre chaque effet. Pour chacun, il doit y avoir son nom et tous les paramètres séparés par des virgules.
+You must enter the sequence with `-` between each effect. For each, there must be their name and all parameters separated by commas.
